@@ -28,3 +28,33 @@ C:\Users\bingo\Desktop\Game Folder\SQ\SQ\obj\x86\Debug\SQ.pdb
 C:\Users\bingo\Desktop\Game Folder\SQ\SQ\bin\Windows\x86\Debug\Content\Character.xnb
 C:\Users\bingo\Desktop\Game Folder\SQ\SQ\bin\Windows\x86\Debug\LitJson.dll
 C:\Users\bingo\Desktop\Game Folder\SQ\SQ\bin\Windows\x86\Debug\Content\Fence.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Character.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\FadeImage.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Fence.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\font.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\GroundTiles.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SQ.exe
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SQ.pdb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\LitJson.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.csprojResolveAssemblyReference.cache
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.csproj.CoreCompileInputs.cache
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.exe
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.pdb

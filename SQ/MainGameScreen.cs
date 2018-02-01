@@ -22,6 +22,10 @@ namespace SQ
             map.CreateMap(content);       
         }
 
+
+        // For Mouse Control
+        private MouseState oldState;
+      
         public override void Update(GameTime gameTime, Camera cam)
         {
             if (player.getMovingBool() == false)
@@ -35,6 +39,18 @@ namespace SQ
             cam.Position = new Vector2(player.SpritePOS.X - (ScreenManager.Instance().ScreenDimensions.X / 2), player.SpritePOS.Y - (ScreenManager.Instance().ScreenDimensions.Y / 2));
 
             base.Update(gameTime, cam);
+
+            //Brendan's Mouse Control
+
+            MouseState newState = Mouse.GetState();
+            if (newState.LeftButton == ButtonState.Pressed && oldState.LeftButton == ButtonState.Released)
+                {
+                    // Will add functionality here later.
+                }
+            oldState = newState;
+            int mousePosX = oldState.X;
+            int mousePosY = oldState.Y;
+
         }
 
         public override void Draw(SpriteBatch spriteBatch)

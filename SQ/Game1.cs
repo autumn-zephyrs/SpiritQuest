@@ -34,7 +34,7 @@ namespace SQ
             camera2D.Zoom = 1f;
 
 
-            this.IsMouseVisible = false;
+            this.IsMouseVisible = true;
 
             base.Initialize();
         }
@@ -56,7 +56,6 @@ namespace SQ
         {
 
             ScreenManager.Instance().Update(gameTime, camera2D);
-
             base.Update(gameTime);
         }
 

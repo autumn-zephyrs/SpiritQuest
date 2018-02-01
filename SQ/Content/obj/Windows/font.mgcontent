@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/bingo/Desktop/Game Folder/SQ/SQ/Content/font.spritefont</SourceFile>
-  <SourceTime>2017-03-01T15:05:30+00:00</SourceTime>
-  <DestFile>C:/Users/bingo/Desktop/Game Folder/SQ/SQ/Content/bin/Windows/font.xnb</DestFile>
-  <DestTime>2017-11-28T13:24:09.7880171+00:00</DestTime>
+  <SourceFile>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/font.spritefont</SourceFile>
+  <SourceTime>2018-02-01T15:27:34.1628735+00:00</SourceTime>
+  <DestFile>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/bin/Windows/font.xnb</DestFile>
+  <DestTime>2018-02-01T15:48:55.3474727+00:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>

@@ -48,8 +48,8 @@ namespace SQ
                     // Will add functionality here later.
                 }
             oldState = newState;
-            int mousePosX = oldState.X;
-            int mousePosY = oldState.Y;
+            int mousePosX = oldState.X + (int)cam.Position.X;
+            int mousePosY = oldState.Y + (int)cam.Position.Y;
 
         }
 

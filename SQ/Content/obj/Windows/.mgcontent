@@ -4,6 +4,14 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/font.spritefont</File>
+=======
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/GroundTiles.png</File>
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/FadeImage.png</File>
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/font.spritefont</File>
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Character.png</File>
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Fence.png</File>
+>>>>>>> 766f5010ac229185f28f39270abb09fe754d2247
   </SourceFiles>
 </SourceFileCollection>

@@ -30,12 +30,14 @@ namespace SQ
         {
             if (player.getMovingBool() == false)
             {
+                // this tells the player whether there is an object in any direction
                 player.setProperGridPosition(map.NumberOfFloorObjects);
                 int gridPosition = player.getProperGridPosition();
                 player.setMovementBools(map.CanPlayerMoveToTile(gridPosition - map.NumberOfFloorObjects), map.CanPlayerMoveToTile(gridPosition - 1), map.CanPlayerMoveToTile(gridPosition + 1), map.CanPlayerMoveToTile(gridPosition + map.NumberOfFloorObjects));
             }
             player.Update(gameTime);
            
+            // sets the camera position to center the player
             cam.Position = new Vector2(player.SpritePOS.X - (ScreenManager.Instance().ScreenDimensions.X / 2), player.SpritePOS.Y - (ScreenManager.Instance().ScreenDimensions.Y / 2));
 
             base.Update(gameTime, cam);

@@ -19,7 +19,9 @@ namespace SQ
         private int[] FloorArray;
         private int[] ObjectArray;
         private int[] CollisionArray;
+
         public int NumberOfFloorObjects;
+
         private Texture2D GroundTexture;
         private texture[] GroundSprites;
         private Texture2D ObjectTextures;
@@ -31,7 +33,7 @@ namespace SQ
             if (!File.Exists("MapData/Ground.json"))
             {
                 Directory.CreateDirectory("MapData");
-              
+                // initialises a basic 10 by 10 map if there is no map data stored
                 string json = @"
                     {
                         ""NumberOfFloorObjects"" : 10,
@@ -77,16 +79,17 @@ namespace SQ
                 ";
 
                 
-
+                // turns the long string above into a Json object and saves it
                 jsonData = JsonMapper.ToObject(json);
                 File.WriteAllText("MapData/Ground.json", jsonData.ToJson());
             }
             else
             {
-
+                // gathers map data
                 jsonData = JsonMapper.ToObject(File.ReadAllText("MapData/Ground.json").ToString());
 
             }
+            //converts the Json arrays into c# arrays
             JsonReader reader = new JsonReader( jsonData["FloorArray"].ToJson().ToString());
             FloorArray = JsonMapper.ToObject<int[]>(reader);
             reader = new JsonReader(jsonData["ObjectArray"].ToJson().ToString());
@@ -96,22 +99,28 @@ namespace SQ
 
             NumberOfFloorObjects = (int)jsonData["NumberOfFloorObjects"];
 
+            // number of floor objects != number of objects in the arrays(collider, etc)
             if(NumberOfFloorObjects * NumberOfFloorObjects != FloorArray.Length || NumberOfFloorObjects * NumberOfFloorObjects != ObjectArray.Length)
             {
-
+                // clear the arrays 
                 Array.Clear(FloorArray,0, FloorArray.Length);
                 Array.Clear(ObjectArray, 0, ObjectArray.Length);
                 Array.Clear(CollisionArray, 0, CollisionArray.Length);
+
+                // create new ones with the real number of floor objects
                 ObjectArray = new int[NumberOfFloorObjects * NumberOfFloorObjects];
                 FloorArray = new int[NumberOfFloorObjects * NumberOfFloorObjects];
                 CollisionArray = new int[NumberOfFloorObjects * NumberOfFloorObjects];
 
+                // populate them with texture number 0
                 for (int i = 0; i < NumberOfFloorObjects * NumberOfFloorObjects; i++)
                {
                     ObjectArray[i] = 0;
                     FloorArray[i] = 0;
                     CollisionArray[i] = 0;
                 }
+
+                // save to file
                 JsonData jsonDataFloor = JsonMapper.ToJson(FloorArray);
                 JsonData jsonDataObject = JsonMapper.ToJson(ObjectArray);
                 JsonData jsonDataCollision = JsonMapper.ToJson(CollisionArray);
@@ -120,17 +129,21 @@ namespace SQ
 
 
             }
+     
+            // creates visuals from the arrays
             GroundTexture = content.Load<Texture2D>("GroundTiles");
             ObjectTextures = content.Load<Texture2D>("Fence");
             GroundSprites = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
             ObjectSprites = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
+
+
+            //This creates and changes the position of the sourceREctangle for each texture based on the array 
             for (int i = 0; i < NumberOfFloorObjects; i++)
             {
                 for (int I = 0; I < NumberOfFloorObjects; I++)
                 {
-                    //change the the number that xy are divided by (in this case 8) to change the number of
-                    //items on a row in the sprite sheet 
                     int X, Y;
+                    // 8 = amount of sprites on each row of the sprite sheet
                     X = (FloorArray[(I + (i * NumberOfFloorObjects))] % 8) * 32;
                     Y = (FloorArray[(I + (i * NumberOfFloorObjects))] / 8) * 32;
                     GroundSprites[(i * NumberOfFloorObjects) + I] = new texture(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));

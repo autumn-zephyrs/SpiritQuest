@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/Character.png</SourceFile>
-  <SourceTime>2018-02-01T15:27:31.8477348+00:00</SourceTime>
-  <DestFile>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/bin/Windows/Character.xnb</DestFile>
-  <DestTime>2018-02-01T15:48:55.4881046+00:00</DestTime>
+  <SourceFile>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Character.png</SourceFile>
+  <SourceTime>2017-11-30T19:33:41.6845458+00:00</SourceTime>
+  <DestFile>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/bin/Windows/Character.xnb</DestFile>
+  <DestTime>2018-02-03T12:55:03.7114721+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

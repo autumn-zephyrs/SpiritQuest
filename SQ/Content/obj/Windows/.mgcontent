@@ -4,10 +4,10 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/GroundTiles.png</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/FadeImage.png</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/font.spritefont</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/Character.png</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/Fence.png</File>
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/GroundTiles.png</File>
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/FadeImage.png</File>
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/font.spritefont</File>
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Character.png</File>
+    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Fence.png</File>
   </SourceFiles>
 </SourceFileCollection>

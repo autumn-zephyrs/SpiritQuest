@@ -223,7 +223,5 @@ namespace SQ
         {
             spriteBatch.Draw(texture,Position,Source,Color.White);
         }
-    }
-
-    
+    }    
 }

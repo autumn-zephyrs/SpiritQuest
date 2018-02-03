@@ -35,6 +35,7 @@ namespace SQ
                 int gridPosition = player.getProperGridPosition();
                 player.setMovementBools(map.CanPlayerMoveToTile(gridPosition - map.NumberOfFloorObjects), map.CanPlayerMoveToTile(gridPosition - 1), map.CanPlayerMoveToTile(gridPosition + 1), map.CanPlayerMoveToTile(gridPosition + map.NumberOfFloorObjects));
             }
+
             player.Update(gameTime);
            
             // sets the camera position to center the player
@@ -50,6 +51,8 @@ namespace SQ
                     // Will add functionality here later.
                 }
             oldState = newState;
+
+            // you know this only saves here right? its local so ou will only be able to use it after this point
             int mousePosX = oldState.X + (int)cam.Position.X;
             int mousePosY = oldState.Y + (int)cam.Position.Y;
 

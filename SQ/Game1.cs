@@ -56,6 +56,7 @@ namespace SQ
         {
 
             ScreenManager.Instance().Update(gameTime, camera2D);
+
             base.Update(gameTime);
         }
 

@@ -48,6 +48,7 @@
     <Compile Include="GameScreenTransition.cs" />
     <Compile Include="MainGameScreen.cs" />
     <Compile Include="MapGeneration.cs" />
+    <Compile Include="MenuManager.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

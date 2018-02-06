@@ -13,10 +13,13 @@ namespace SQ
 {
     class MainGameScreen : GameScreen
     {
+        MenuManager menu;
         MapGeneration map;
         Player player;
         public override void LoadContent(ContentManager content)
         {
+            menu = new MenuManager();
+            menu.LoadContent(content);
             map = new MapGeneration();
             player = new Player(content.Load<Texture2D>("Character"), new Rectangle(0,0,32,42),new Rectangle(0,0,16,21),4,100,0,2,0,0);
             map.CreateMap(content);       
@@ -38,6 +41,7 @@ namespace SQ
            
             cam.Position = new Vector2(player.SpritePOS.X - (ScreenManager.Instance().ScreenDimensions.X / 2), player.SpritePOS.Y - (ScreenManager.Instance().ScreenDimensions.Y / 2));
 
+            menu.Update(gameTime, cam);
             base.Update(gameTime, cam);
 
             //Brendan's Mouse Control
@@ -60,6 +64,7 @@ namespace SQ
             map.DrawBeforePlayer(player.getProperGridPosition(), spriteBatch);
             player.Draw(spriteBatch);
             map.DrawAfterPlayer(player.getProperGridPosition(), spriteBatch);
+            menu.Draw(spriteBatch);
             base.Draw(spriteBatch);
         }
     }

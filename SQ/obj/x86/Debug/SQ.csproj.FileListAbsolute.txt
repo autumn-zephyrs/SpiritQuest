@@ -58,3 +58,4 @@ C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.csprojReso
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.csproj.CoreCompileInputs.cache
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.exe
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.pdb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\menu.xnb

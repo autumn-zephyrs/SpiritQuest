@@ -31,13 +31,17 @@ namespace SQ
       
         public override void Update(GameTime gameTime, Camera cam)
         {
-            if (player.getMovingBool() == false)
+            if (menu.isMenuOpen == true)
             {
-                player.setProperGridPosition(map.NumberOfFloorObjects);
-                int gridPosition = player.getProperGridPosition();
-                player.setMovementBools(map.CanPlayerMoveToTile(gridPosition - map.NumberOfFloorObjects), map.CanPlayerMoveToTile(gridPosition - 1), map.CanPlayerMoveToTile(gridPosition + 1), map.CanPlayerMoveToTile(gridPosition + map.NumberOfFloorObjects));
+
+                if (player.getMovingBool() == false)
+                {
+                    player.setProperGridPosition(map.NumberOfFloorObjects);
+                    int gridPosition = player.getProperGridPosition();
+                    player.setMovementBools(map.CanPlayerMoveToTile(gridPosition - map.NumberOfFloorObjects), map.CanPlayerMoveToTile(gridPosition - 1), map.CanPlayerMoveToTile(gridPosition + 1), map.CanPlayerMoveToTile(gridPosition + map.NumberOfFloorObjects));
+                }
+                player.Update(gameTime);
             }
-            player.Update(gameTime);
            
             cam.Position = new Vector2(player.SpritePOS.X - (ScreenManager.Instance().ScreenDimensions.X / 2), player.SpritePOS.Y - (ScreenManager.Instance().ScreenDimensions.Y / 2));
 

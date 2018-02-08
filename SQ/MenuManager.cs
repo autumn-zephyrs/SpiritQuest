@@ -19,7 +19,7 @@ namespace SQ
         public MenuManager() {}
         public void LoadContent(ContentManager content)
         {
-            menu = new Menu(content.Load<Texture2D>("menu"), new Rectangle(0,0,640,600),new Rectangle(0,0,640,600));
+            menu = new Menu(content.Load<Texture2D>("menu"), new Rectangle(32,32,640,600),new Rectangle(0,0,640,600));
         }
         public void Draw(SpriteBatch spriteBatch)
         {

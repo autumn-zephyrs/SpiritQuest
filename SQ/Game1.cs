@@ -22,13 +22,13 @@ namespace SQ
         protected override void Initialize()
         {
 
-            graphics.PreferredBackBufferWidth = graphics.GraphicsDevice.Viewport.Width;
-            graphics.PreferredBackBufferHeight = graphics.GraphicsDevice.Viewport.Height;
-            ScreenManager.Instance().ScreenDimensions.X = graphics.GraphicsDevice.Viewport.Width;
-            ScreenManager.Instance().ScreenDimensions.Y = graphics.GraphicsDevice.Viewport.Height;
+            graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+            graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+            ScreenManager.Instance().ScreenDimensions.X = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+            ScreenManager.Instance().ScreenDimensions.Y = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
             graphics.GraphicsDevice.DepthStencilState = DepthStencilState.Default;
             graphics.GraphicsDevice.BlendState = BlendState.Opaque;
-            //graphics.ToggleFullScreen();
+            graphics.ToggleFullScreen();
             graphics.ApplyChanges();
             camera2D = new Camera(graphics.GraphicsDevice.Viewport);
             camera2D.Zoom = 1f;

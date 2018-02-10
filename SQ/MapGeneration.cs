@@ -16,14 +16,18 @@ namespace SQ
 {
     class MapGeneration
     {
-        private int[] FloorArray;
-        private int[] ObjectArray;
-        private int[] CollisionArray;
+        private int[] BaseLayer;
+        private int[] Layer1;
+        private int[] Layer2;
+        private int[] Collision;
         public int NumberOfFloorObjects;
-        private Texture2D GroundTexture;
-        private texture[] GroundSprites;
-        private Texture2D ObjectTextures;
-        private texture[] ObjectSprites;
+        private Texture2D BaseTexture;
+        private texture[] BaseTextureArray;
+        private Texture2D Layer1Texture;
+        private texture[] Layer1TextureArray;
+        private Texture2D Layer2Texture;
+        private texture[] Layer2TextureArray;
+
         JsonData jsonData;
 
         public void CreateMap(ContentManager content)
@@ -36,7 +40,7 @@ namespace SQ
                     {
                         ""NumberOfFloorObjects"" : 10,
                         
-                        ""FloorArray"" : 
+                        ""MapData"" : [
                          [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                           1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                           1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -48,7 +52,6 @@ namespace SQ
                           1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                           1, 1, 1, 1, 1, 1, 1, 1, 1, 1],     
 
-                        ""ObjectArray"" : 
                          [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                           1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                           1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -60,8 +63,17 @@ namespace SQ
                           1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                           1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ,
 
-                          
-                        ""CollisionArray"" : 
+                         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0] ,
+                        
                          [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                           1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
                           1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
@@ -72,7 +84,7 @@ namespace SQ
                           1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
                           1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
                           1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
-                          
+                          ]
                     }
                 ";
 
@@ -87,43 +99,54 @@ namespace SQ
                 jsonData = JsonMapper.ToObject(File.ReadAllText("MapData/Ground.json").ToString());
 
             }
-            JsonReader reader = new JsonReader( jsonData["FloorArray"].ToJson().ToString());
-            FloorArray = JsonMapper.ToObject<int[]>(reader);
-            reader = new JsonReader(jsonData["ObjectArray"].ToJson().ToString());
-            ObjectArray = JsonMapper.ToObject<int[]>(reader);
-            reader = new JsonReader(jsonData["CollisionArray"].ToJson().ToString());
-            CollisionArray = JsonMapper.ToObject<int[]>(reader);
+            JsonReader reader = new JsonReader( jsonData["MapData"][0].ToJson().ToString());
+            BaseLayer = JsonMapper.ToObject<int[]>(reader);
+
+            reader = new JsonReader(jsonData["MapData"][1].ToJson().ToString());
+            Layer1 = JsonMapper.ToObject<int[]>(reader);
+
+            reader = new JsonReader(jsonData["MapData"][2].ToJson().ToString());
+            Layer2 = JsonMapper.ToObject<int[]>(reader);
+
+            reader = new JsonReader(jsonData["MapData"][3].ToJson().ToString());
+            Collision = JsonMapper.ToObject<int[]>(reader);
 
             NumberOfFloorObjects = (int)jsonData["NumberOfFloorObjects"];
 
-            if(NumberOfFloorObjects * NumberOfFloorObjects != FloorArray.Length || NumberOfFloorObjects * NumberOfFloorObjects != ObjectArray.Length)
+            if(NumberOfFloorObjects * NumberOfFloorObjects != BaseLayer.Length || NumberOfFloorObjects * NumberOfFloorObjects != Layer1.Length)
             {
 
-                Array.Clear(FloorArray,0, FloorArray.Length);
-                Array.Clear(ObjectArray, 0, ObjectArray.Length);
-                Array.Clear(CollisionArray, 0, CollisionArray.Length);
-                ObjectArray = new int[NumberOfFloorObjects * NumberOfFloorObjects];
-                FloorArray = new int[NumberOfFloorObjects * NumberOfFloorObjects];
-                CollisionArray = new int[NumberOfFloorObjects * NumberOfFloorObjects];
+                Array.Clear(BaseLayer,0, BaseLayer.Length);
+                Array.Clear(Layer1, 0, Layer1.Length);
+                Array.Clear(Collision, 0, Collision.Length);
+                Array.Clear(Layer2, 0, Layer2.Length);
+                Layer1 = new int[NumberOfFloorObjects * NumberOfFloorObjects];
+                Layer2 = new int[NumberOfFloorObjects * NumberOfFloorObjects];
+                BaseLayer = new int[NumberOfFloorObjects * NumberOfFloorObjects];
+                Collision = new int[NumberOfFloorObjects * NumberOfFloorObjects];
 
                 for (int i = 0; i < NumberOfFloorObjects * NumberOfFloorObjects; i++)
                {
-                    ObjectArray[i] = 0;
-                    FloorArray[i] = 0;
-                    CollisionArray[i] = 0;
+                    Layer1[i] = 0;
+                    Layer2[i] = -1;
+                    BaseLayer[i] = 0;
+                    Collision[i] = 0;
                 }
-                JsonData jsonDataFloor = JsonMapper.ToJson(FloorArray);
-                JsonData jsonDataObject = JsonMapper.ToJson(ObjectArray);
-                JsonData jsonDataCollision = JsonMapper.ToJson(CollisionArray);
-                string jsondata = @"{ ""NumberOfFloorObjects"" : " + NumberOfFloorObjects.ToString() +  @", ""FloorArray"" : [" + jsonDataFloor.ToJson().ToString() + @"], ""ObjectArray"" : [" + jsonDataObject.ToJson().ToString() + "]," + @" ""CollisionArray"": [" + jsonDataCollision.ToJson().ToString() +"] }";
+                JsonData jsonDataBase = JsonMapper.ToJson(BaseLayer);
+                JsonData jsonDataLayer1 = JsonMapper.ToJson(Layer1);
+                JsonData jsonDataLayer2 = JsonMapper.ToJson(Layer2);
+                JsonData jsonDataCollision = JsonMapper.ToJson(Collision);
+                string jsondata = @"{ ""NumberOfFloorObjects"" : " + NumberOfFloorObjects.ToString() +  @", ""MapData"" : {[" + jsonDataBase.ToJson().ToString() + @"], [" + jsonDataLayer1.ToJson().ToString() + "]," + @" [" + jsonDataLayer2.ToJson().ToString() + "]," + @"[" + jsonDataCollision.ToJson().ToString() +"]} }";
                 File.WriteAllText("MapData/Ground.json", jsondata);
 
 
             }
-            GroundTexture = content.Load<Texture2D>("GroundTiles");
-            ObjectTextures = content.Load<Texture2D>("Fence");
-            GroundSprites = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
-            ObjectSprites = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
+            BaseTexture = content.Load<Texture2D>("GroundTiles");
+            Layer1Texture = content.Load<Texture2D>("Fence");
+            Layer2Texture = content.Load<Texture2D>("Fence");
+            BaseTextureArray = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
+            Layer1TextureArray = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
+            Layer2TextureArray = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
             for (int i = 0; i < NumberOfFloorObjects; i++)
             {
                 for (int I = 0; I < NumberOfFloorObjects; I++)
@@ -131,15 +154,23 @@ namespace SQ
                     //change the the number that xy are divided by (in this case 8) to change the number of
                     //items on a row in the sprite sheet 
                     int X, Y;
-                    X = (FloorArray[(I + (i * NumberOfFloorObjects))] % 8) * 32;
-                    Y = (FloorArray[(I + (i * NumberOfFloorObjects))] / 8) * 32;
-                    GroundSprites[(i * NumberOfFloorObjects) + I] = new texture(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));
+                    X = (BaseLayer[(I + (i * NumberOfFloorObjects))] % 8) * 32;
+                    Y = (BaseLayer[(I + (i * NumberOfFloorObjects))] / 8) * 32;
+                    BaseTextureArray[(i * NumberOfFloorObjects) + I] = new texture(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));
 
-                    if (ObjectArray[(I + (i * NumberOfFloorObjects))] != -1)
+                    if (Layer1[(I + (i * NumberOfFloorObjects))] != -1)
                     {
-                        X = (ObjectArray[(I + (i * NumberOfFloorObjects))] % 3) * 32;
-                        Y = (ObjectArray[(I + (i * NumberOfFloorObjects))] / 3) * 32;
-                        ObjectSprites[(i * NumberOfFloorObjects) + I] = new texture(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));
+                        X = (Layer1[(I + (i * NumberOfFloorObjects))] % 3) * 32;
+                        Y = (Layer1[(I + (i * NumberOfFloorObjects))] / 3) * 32;
+                        Layer1TextureArray[(i * NumberOfFloorObjects) + I] = new texture(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));
+                    }
+
+                    if(Layer2[(I + (i * NumberOfFloorObjects))] != -1)
+                    {
+                        X = (Layer2[(I + (i * NumberOfFloorObjects))] % 3) * 32;
+                        Y = (Layer2[(I + (i * NumberOfFloorObjects))] / 3) * 32;
+                        Layer2TextureArray[(i * NumberOfFloorObjects) + I] = new texture(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));
+
                     }
                 }
             }
@@ -153,9 +184,9 @@ namespace SQ
 
         public bool  CanPlayerMoveToTile(int tileNumber)
         {
-            if (tileNumber < CollisionArray.Length && tileNumber > 0)
+            if (tileNumber < Collision.Length && tileNumber > 0)
             {
-                if (CollisionArray[tileNumber] == 1)
+                if (Collision[tileNumber] == 1)
                 {
                     return false;
                 }
@@ -172,25 +203,30 @@ namespace SQ
         {
             for(int i = 0; i <= playerPos - 2; i++)
             {
-                if(ObjectSprites[i] != null)
-                    ObjectSprites[i].Draw(spriteBatch, ObjectTextures);
+                if(Layer1TextureArray[i] != null)
+                    Layer1TextureArray[i].Draw(spriteBatch, Layer1Texture);
             }
         }
 
         public void DrawAfterPlayer(int playerPos, SpriteBatch spriteBatch)
         {
-            for (int i = playerPos - 2; i < ObjectSprites.Length; i++)
+            for (int i = playerPos - 2; i < Layer1TextureArray.Length; i++)
             {
-                if(ObjectSprites[i] != null && i >= 0)
-                    ObjectSprites[i].Draw(spriteBatch, ObjectTextures);
+                if (Layer1TextureArray[i] != null && i >= 0)
+                    Layer1TextureArray[i].Draw(spriteBatch, Layer1Texture);
+            }
+            for (int i = 0; i < Layer2TextureArray.Length; i++)
+            {
+                if (Layer2TextureArray[i] != null && i >= 0)
+                    Layer2TextureArray[i].Draw(spriteBatch, Layer2Texture);
             }
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            foreach (texture t in GroundSprites)
+            foreach (texture t in BaseTextureArray)
             {
-                t.Draw(spriteBatch, GroundTexture);
+                t.Draw(spriteBatch, BaseTexture);
             }            
         }
     }

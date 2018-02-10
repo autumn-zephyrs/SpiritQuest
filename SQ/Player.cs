@@ -29,7 +29,8 @@ namespace SQ
         public Player(Texture2D spriteTexture, Rectangle spritePOS, Rectangle sourceRect, int amountOfFrames, double timeBetweenFrames, int amountOfRows, int movementSpeed, int widthGapBetweenFrame, int heightGapBetweenFrame)
         {
             Moving = false;
-            PositionOnGrid = new Vector2(1,1);
+            PositionOnGrid = new Vector2(4,4);
+            
             MovementSpeed = movementSpeed;
             SpriteTexture = spriteTexture;
             SpritePOS = spritePOS;

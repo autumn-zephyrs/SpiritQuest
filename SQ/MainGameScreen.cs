@@ -22,7 +22,8 @@ namespace SQ
             menu.LoadContent(content);
             map = new MapGeneration();
             player = new Player(content.Load<Texture2D>("Character"), new Rectangle(0,0,32,42),new Rectangle(0,0,16,21),4,100,0,2,0,0);
-            map.CreateMap(content);       
+            map.CreateMap(content);
+            player.setProperGridPosition(map.NumberOfFloorObjects);
         }
 
 
@@ -31,11 +32,13 @@ namespace SQ
       
         public override void Update(GameTime gameTime, Camera cam)
         {
-            if (menu.isMenuOpen == true)
+
+            if (menu.isMenuOpen == false)
             {
 
                 if (player.getMovingBool() == false)
                 {
+                    System.Diagnostics.Debug.WriteLine("Player not moving");
                     player.setProperGridPosition(map.NumberOfFloorObjects);
                     int gridPosition = player.getProperGridPosition();
                     player.setMovementBools(map.CanPlayerMoveToTile(gridPosition - map.NumberOfFloorObjects), map.CanPlayerMoveToTile(gridPosition - 1), map.CanPlayerMoveToTile(gridPosition + 1), map.CanPlayerMoveToTile(gridPosition + map.NumberOfFloorObjects));

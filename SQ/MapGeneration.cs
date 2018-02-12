@@ -20,6 +20,7 @@ namespace SQ
         private int[] Layer1;
         private int[] Layer2;
         private int[] Collision;
+        private int[] Interactable;
         public int NumberOfFloorObjects;
         private Texture2D BaseTexture;
         private texture[] BaseTextureArray;
@@ -73,7 +74,7 @@ namespace SQ
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0] ,
-                        
+                                         
                          [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                           1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
                           1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
@@ -83,7 +84,19 @@ namespace SQ
                           1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
                           1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
                           1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-                          1, 1, 1, 1, 1, 1, 1, 1, 1, 1] 
+                          1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                        
+                         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
+                            
                           ]
                     }
                 ";
@@ -111,6 +124,9 @@ namespace SQ
             reader = new JsonReader(jsonData["MapData"][3].ToJson().ToString());
             Collision = JsonMapper.ToObject<int[]>(reader);
 
+            reader = new JsonReader(jsonData["MapData"][3].ToJson().ToString());
+            Interactable = JsonMapper.ToObject<int[]>(reader);
+
             NumberOfFloorObjects = (int)jsonData["NumberOfFloorObjects"];
 
             if(NumberOfFloorObjects * NumberOfFloorObjects != BaseLayer.Length || NumberOfFloorObjects * NumberOfFloorObjects != Layer1.Length)
@@ -120,10 +136,12 @@ namespace SQ
                 Array.Clear(Layer1, 0, Layer1.Length);
                 Array.Clear(Collision, 0, Collision.Length);
                 Array.Clear(Layer2, 0, Layer2.Length);
+                Array.Clear(Interactable, 0, Interactable.Length);
                 Layer1 = new int[NumberOfFloorObjects * NumberOfFloorObjects];
                 Layer2 = new int[NumberOfFloorObjects * NumberOfFloorObjects];
                 BaseLayer = new int[NumberOfFloorObjects * NumberOfFloorObjects];
                 Collision = new int[NumberOfFloorObjects * NumberOfFloorObjects];
+                Interactable = new int[NumberOfFloorObjects * NumberOfFloorObjects];
 
                 for (int i = 0; i < NumberOfFloorObjects * NumberOfFloorObjects; i++)
                {
@@ -136,7 +154,8 @@ namespace SQ
                 JsonData jsonDataLayer1 = JsonMapper.ToJson(Layer1);
                 JsonData jsonDataLayer2 = JsonMapper.ToJson(Layer2);
                 JsonData jsonDataCollision = JsonMapper.ToJson(Collision);
-                string jsondata = @"{ ""NumberOfFloorObjects"" : " + NumberOfFloorObjects.ToString() +  @", ""MapData"" : {[" + jsonDataBase.ToJson().ToString() + @"], [" + jsonDataLayer1.ToJson().ToString() + "]," + @" [" + jsonDataLayer2.ToJson().ToString() + "]," + @"[" + jsonDataCollision.ToJson().ToString() +"]} }";
+                JsonData jsonDataInteractable = JsonMapper.ToJson(Collision);
+                string jsondata = @"{ ""NumberOfFloorObjects"" : " + NumberOfFloorObjects.ToString() +  @", ""MapData"" : {[" + jsonDataBase.ToJson().ToString() + @"], [" + jsonDataLayer1.ToJson().ToString() + "]," + @" [" + jsonDataLayer2.ToJson().ToString() + "]," + @"[" + jsonDataCollision.ToJson().ToString() + "]," + @"[" + jsonDataInteractable.ToJson().ToString() + "]" + "]} }";
                 File.WriteAllText("MapData/Ground.json", jsondata);
 
 

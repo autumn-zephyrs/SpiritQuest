@@ -141,19 +141,19 @@ namespace SQ
                 
                 if (SpritePOS.X > PositionOnGrid.X * 32 - GridPositionOffset.X )
                 {
-                    SpritePOS.X -= 2;
+                    SpritePOS.X -= 4;
                 }
                 else if (SpritePOS.X < PositionOnGrid.X * 32 - GridPositionOffset.X)
                 {
-                    SpritePOS.X += 2;
+                    SpritePOS.X += 4;
                 }
                 else if (SpritePOS.Y < PositionOnGrid.Y * 32 - GridPositionOffset.Y)
                 {
-                    SpritePOS.Y += 2;
+                    SpritePOS.Y += 4;
                 }
                 else if(SpritePOS.Y > PositionOnGrid.Y * 32 - GridPositionOffset.Y)
                 {
-                    SpritePOS.Y -= 2;
+                    SpritePOS.Y -= 4;
                 }
                 else
                 {

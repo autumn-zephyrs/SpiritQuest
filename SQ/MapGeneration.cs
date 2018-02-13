@@ -28,6 +28,8 @@ namespace SQ
         private texture[] Layer1TextureArray;
         private Texture2D Layer2Texture;
         private texture[] Layer2TextureArray;
+        private Texture2D InteractableTexture;
+        private texture[] InteractableTextureArray;
 
         JsonData jsonData;
 
@@ -94,7 +96,7 @@ namespace SQ
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                          0, 0, 0, 0, 0, 0, 0, item_misc_ruby, 0, 0,
+                          0, 0, 0, 4, 0, 0, 3, 1, 2, 0,
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
                             
                           ]
@@ -155,7 +157,7 @@ namespace SQ
                 JsonData jsonDataLayer1 = JsonMapper.ToJson(Layer1);
                 JsonData jsonDataLayer2 = JsonMapper.ToJson(Layer2);
                 JsonData jsonDataCollision = JsonMapper.ToJson(Collision);
-                JsonData jsonDataInteractable = JsonMapper.ToJson(Collision);
+                JsonData jsonDataInteractable = JsonMapper.ToJson(Interactable);
                 string jsondata = @"{ ""NumberOfFloorObjects"" : " + NumberOfFloorObjects.ToString() +  @", ""MapData"" : {[" + jsonDataBase.ToJson().ToString() + @"], [" + jsonDataLayer1.ToJson().ToString() + "]," + @" [" + jsonDataLayer2.ToJson().ToString() + "]," + @"[" + jsonDataCollision.ToJson().ToString() + "]," + @"[" + jsonDataInteractable.ToJson().ToString() + "]" + "]} }";
                 File.WriteAllText("MapData/Ground.json", jsondata);
 
@@ -164,9 +166,11 @@ namespace SQ
             BaseTexture = content.Load<Texture2D>("GroundTiles");
             Layer1Texture = content.Load<Texture2D>("Fence");
             Layer2Texture = content.Load<Texture2D>("Fence");
+            InteractableTexture = content.Load<Texture2D>("item_misc");
             BaseTextureArray = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
             Layer1TextureArray = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
             Layer2TextureArray = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
+            InteractableTextureArray = new texture[NumberOfFloorObjects * NumberOfFloorObjects];
             for (int i = 0; i < NumberOfFloorObjects; i++)
             {
                 for (int I = 0; I < NumberOfFloorObjects; I++)
@@ -190,6 +194,13 @@ namespace SQ
                         X = (Layer2[(I + (i * NumberOfFloorObjects))] % 3) * 32;
                         Y = (Layer2[(I + (i * NumberOfFloorObjects))] / 3) * 32;
                         Layer2TextureArray[(i * NumberOfFloorObjects) + I] = new texture(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));
+
+                    }
+                    if (Interactable[(I + (i * NumberOfFloorObjects))] != -1)
+                    {
+                        X = (Interactable[(I + (i * NumberOfFloorObjects))] % 10) * 32;
+                        Y = (Interactable[(I + (i * NumberOfFloorObjects))] / 10) * 32;
+                        InteractableTextureArray[(i * NumberOfFloorObjects) + I] = new texture(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));
 
                     }
                 }
@@ -226,6 +237,11 @@ namespace SQ
                 if(Layer1TextureArray[i] != null)
                     Layer1TextureArray[i].Draw(spriteBatch, Layer1Texture);
             }
+            for (int i = 0; i < InteractableTextureArray.Length; i++)
+            {
+                if (InteractableTextureArray[i] != null && i >= 0)
+                    InteractableTextureArray[i].Draw(spriteBatch, InteractableTexture);
+            }
         }
 
         public void DrawAfterPlayer(int playerPos, SpriteBatch spriteBatch)
@@ -240,6 +256,7 @@ namespace SQ
                 if (Layer2TextureArray[i] != null && i >= 0)
                     Layer2TextureArray[i].Draw(spriteBatch, Layer2Texture);
             }
+           
         }
 
         public void Draw(SpriteBatch spriteBatch)

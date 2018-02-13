@@ -126,7 +126,7 @@ namespace SQ
             reader = new JsonReader(jsonData["MapData"][3].ToJson().ToString());
             Collision = JsonMapper.ToObject<int[]>(reader);
 
-            reader = new JsonReader(jsonData["MapData"][3].ToJson().ToString());
+            reader = new JsonReader(jsonData["MapData"][4].ToJson().ToString());
             Interactable = JsonMapper.ToObject<int[]>(reader);
 
 

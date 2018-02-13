@@ -94,7 +94,7 @@ namespace SQ
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                          0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                          0, 0, 0, 0, 0, 0, 0, item_misc_ruby, 0, 0,
                           0, 0, 0, 0, 0, 0, 0, 0, 0, 0] 
                             
                           ]
@@ -126,6 +126,7 @@ namespace SQ
 
             reader = new JsonReader(jsonData["MapData"][3].ToJson().ToString());
             Interactable = JsonMapper.ToObject<int[]>(reader);
+
 
             NumberOfFloorObjects = (int)jsonData["NumberOfFloorObjects"];
 

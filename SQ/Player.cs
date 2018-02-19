@@ -13,6 +13,39 @@ namespace SQ
 
     public class Player : Sprite
     {
+        #region playerStats
+        // main stats
+        // strength, dexterity, willpower, intelligence, charisma and vitality.
+        int STR;
+        int DEX;
+        int WIL;
+        int INT;
+        int CHA;
+        int VIT;
+
+        // behind the scenes stuff
+        int currentExperience;
+        int requiredExperience;
+
+        // armour being worn
+        short equippedHeavy;
+        short equippedMedium;
+        short equippedLight;
+
+        // resource pools, heath, stamina and magic
+        int HP;
+        int SP;
+        int MP;
+
+        // derived stats
+        int armourRating;
+        int criticalRating;
+        int encourage;
+        int block;
+        int staminaRegen;
+        int magicRegen;
+        #endregion
+
         #region PlayerVariables
         int MovementSpeed;
         int WidthGapBetweenFrame;
@@ -22,6 +55,8 @@ namespace SQ
         int ProperGridPosition;
         bool Moving;
         bool Left = true, Right = true, Up = true, Down = true;
+
+        public int HP1 { get => HP; set => HP = value; }
         #endregion
 
         #region PlayerSpecificFunctions

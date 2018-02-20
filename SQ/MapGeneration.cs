@@ -19,7 +19,7 @@ namespace SQ
 
         List<MapLayer> MapLayers;
         JsonData jsonData;
-
+        public int NumberOfFloorObjects;
         public void CreateMap(ContentManager content)
         {
             MapLayers = new List<MapLayer>();
@@ -96,12 +96,13 @@ namespace SQ
                 jsonData = JsonMapper.ToObject(json);
                 File.WriteAllText("MapData/Ground.json", jsonData.ToJson());
             }
+
             for (int i = 0; i <= 4; i++)
             {
                 MapLayers.Add(new MapLayer());
                 MapLayers[i].CreateMap(content, i);
             }
-            
+            NumberOfFloorObjects = MapLayers[0].NumberOfFloorObjects;
 
         }
 
@@ -110,11 +111,46 @@ namespace SQ
 
         }
 
-        public bool  CanPlayerMoveToTile(int tileNumber)
+        public bool  CanPlayerMoveToTileUpOrDown(int tileNumber)
         {
-            if (tileNumber < MapLayers[i].Length && tileNumber > 0)
+            if (tileNumber < MapLayers[0].MapNumberArray.Length && tileNumber >= 0)
             {
-                if (Collision[tileNumber] == 1)
+                
+                if (MapLayers[3].MapNumberArray[tileNumber] == 1 )
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool CanPlayerMoveLeftTile(int tileNumber, Vector2 PlayerGridPosition)
+        {
+            if (tileNumber < MapLayers[0].MapNumberArray.Length && tileNumber >= 0)
+            {
+
+                if (MapLayers[3].MapNumberArray[tileNumber] == 1 || PlayerGridPosition.X * 32 >= (NumberOfFloorObjects * 32) - 32)
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool CanPlayerMoveRightTile(int tileNumber, Vector2 PlayerGridPosition)
+        {
+            if (tileNumber < MapLayers[0].MapNumberArray.Length && tileNumber >= 0)
+            {
+
+                if (MapLayers[3].MapNumberArray[tileNumber] == 1 || PlayerGridPosition.X <= 0)
                 {
                     return false;
                 }
@@ -127,19 +163,29 @@ namespace SQ
         }
 
 
+
         public void DrawBeforePlayer(int playerPos, SpriteBatch spriteBatch)
         {
-
+            foreach(MapLayer layer in MapLayers)
+            {
+                layer.DrawBeforePlayer(playerPos, spriteBatch);
+            }
         }
 
         public void DrawAfterPlayer(int playerPos, SpriteBatch spriteBatch)
         {
-           
+            foreach (MapLayer layer in MapLayers)
+            {
+                layer.DrawAfterPlayer(playerPos, spriteBatch);
+            }
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            
+            foreach (MapLayer layer in MapLayers)
+            {
+                layer.Draw(spriteBatch);
+            }
         }
     }
     public class TexturePosition
@@ -164,8 +210,8 @@ namespace SQ
     {
         Texture2D MapTextures;
         TexturePosition[] MapTexturePositions;
-        public int[] MapNumberArray { get;1 private set; }
-        int NumberOfFloorObjects;
+        public int[] MapNumberArray { get; private set; }
+        public int NumberOfFloorObjects { get; private set; }
         int MapDataNumber;
         public MapLayer() { }
 
@@ -175,7 +221,7 @@ namespace SQ
             JsonReader reader = new JsonReader(jsonData["MapData"][MapDataNumber].ToJson().ToString());
 
             this.MapDataNumber = MapDataNumber;
-
+            
             MapNumberArray = JsonMapper.ToObject<int[]>(reader);
             NumberOfFloorObjects = (int)jsonData["NumberOfFloorObjects"];
 
@@ -184,9 +230,10 @@ namespace SQ
                 // if this runs then the mapdata is smaller or lager than the number of floor objects that should be in it
                 Array.Clear(MapNumberArray, 0, MapNumberArray.Length);
                 MapNumberArray = new int[NumberOfFloorObjects * NumberOfFloorObjects];
+
                 for (int i = 0; i < NumberOfFloorObjects * NumberOfFloorObjects; i++)
                 {
-                    if(MapDataNumber == 0 || MapDataNumber == 3)
+                    if (MapDataNumber == 0 || MapDataNumber == 3)
                     {
                         MapNumberArray[i] = 0;
                     }
@@ -195,46 +242,47 @@ namespace SQ
                         MapNumberArray[i] = -1;
                     }
                 }
+            }
+            // Textures being made based on map data
+            MapTexturePositions = new TexturePosition[NumberOfFloorObjects * NumberOfFloorObjects];
+            if (MapDataNumber == 0)
+            {
+                MapTextures = Content.Load<Texture2D>("BaseLayer");
+            }
+            else if(MapDataNumber == 1)
+            {
+                MapTextures = Content.Load<Texture2D>("Layer1");
+            }
+            else if (MapDataNumber == 2)
+            {
+                MapTextures = Content.Load<Texture2D>("Layer2");
+            }
+            else if(MapDataNumber == 3)
+            {
+                MapTextures = Content.Load<Texture2D>("Collisions");
+            }
+            else
+            {
+                MapTextures = Content.Load<Texture2D>("Items");
+            }
 
-                // Textures being made based on map data
-                if (MapDataNumber == 0)
+            for (int i = 0; i < NumberOfFloorObjects; i++)
+            {
+                for (int I = 0; I < NumberOfFloorObjects; I++)
                 {
-                    MapTextures = Content.Load<Texture2D>("BaseLayer");
-                }
-                else if(MapDataNumber == 1)
-                {
-                    MapTextures = Content.Load<Texture2D>("Layer1");
-                }
-                else if (MapDataNumber == 2)
-                {
-                    MapTextures = Content.Load<Texture2D>("Layer2");
-                }
-                else if(MapDataNumber == 3)
-                {
-                    MapTextures = Content.Load<Texture2D>("Collisions");
-                }
-                else
-                {
-                    MapTextures = Content.Load<Texture2D>("Items");
-                }
-
-                for (int i = 0; i < NumberOfFloorObjects; i++)
-                {
-                    for (int I = 0; I < NumberOfFloorObjects; I++)
+                    //change the the number that xy are divided by (in this case 8) to change the number of
+                    //items on a row in the sprite sheet
+                    if (MapNumberArray[(I + (i * NumberOfFloorObjects))] != -1)
                     {
-                        //change the the number that xy are divided by (in this case 8) to change the number of
-                        //items on a row in the sprite sheet
-                        if (MapNumberArray[(I + (i * NumberOfFloorObjects))] != -1)
-                        {
-                            int X, Y;
-                            X = (MapNumberArray[(I + (i * NumberOfFloorObjects))] % 8) * 32;
-                            Y = (MapNumberArray[(I + (i * NumberOfFloorObjects))] / 8) * 32;
-                            MapTexturePositions[(i * NumberOfFloorObjects) + I] = new TexturePosition(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));
-                        }
+                        int X, Y;
+                        X = (MapNumberArray[(I + (i * NumberOfFloorObjects))] % (MapTextures.Width / 32)) * 32;
+                        Y = (MapNumberArray[(I + (i * NumberOfFloorObjects))] / (MapTextures.Width / 32)) * 32;
+                        MapTexturePositions[(i * NumberOfFloorObjects) + I] = new TexturePosition(new Rectangle(32 * I, 32 * i, 32, 32), new Rectangle(X, Y, 32, 32));
                     }
                 }
-
             }
+
+
 
 
         }
@@ -243,11 +291,12 @@ namespace SQ
         public void Draw(SpriteBatch spriteBatch)
         {
             // if collisions or BaseLayer
-            if(MapDataNumber == 0 || MapDataNumber == 3)
+            if(MapDataNumber == 0)
             {
                 foreach (TexturePosition t in MapTexturePositions)
                 {
-                    t.Draw(spriteBatch, MapTextures);
+                    if(t != null)
+                        t.Draw(spriteBatch, MapTextures);
                 }
             }
         }
@@ -258,8 +307,13 @@ namespace SQ
             {
                 for (int i = playerPos - 2; i < MapTexturePositions.Length; i++)
                 {
-                    if (MapTexturePositions[i] != null && i >= 0)
-                        MapTexturePositions[i].Draw(spriteBatch, MapTextures);
+                    if (i >= 0)
+                    {
+                        if (MapTexturePositions[i] != null)
+                        {
+                            MapTexturePositions[i].Draw(spriteBatch, MapTextures);
+                        }
+                    }
                 }
             }
             else if (MapDataNumber == 2)

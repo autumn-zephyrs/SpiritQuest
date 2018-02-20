@@ -41,7 +41,7 @@ namespace SQ
                     System.Diagnostics.Debug.WriteLine("Player not moving");
                     player.setProperGridPosition(map.NumberOfFloorObjects);
                     int gridPosition = player.getProperGridPosition();
-                    player.setMovementBools(map.CanPlayerMoveToTile(gridPosition - map.NumberOfFloorObjects), map.CanPlayerMoveToTile(gridPosition - 1), map.CanPlayerMoveToTile(gridPosition + 1), map.CanPlayerMoveToTile(gridPosition + map.NumberOfFloorObjects));
+                    player.setMovementBools(map.CanPlayerMoveToTileUpOrDown(gridPosition - map.NumberOfFloorObjects), map.CanPlayerMoveRightTile(gridPosition - 1, player.PositionOnGrid), map.CanPlayerMoveLeftTile(gridPosition + 1, player.PositionOnGrid), map.CanPlayerMoveToTileUpOrDown(gridPosition + map.NumberOfFloorObjects));
                 }
                 player.Update(gameTime);
             }

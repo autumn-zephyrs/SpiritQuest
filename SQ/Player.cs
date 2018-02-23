@@ -33,9 +33,12 @@ namespace SQ
         short equippedLight;
 
         // resource pools, heath, stamina and magic
-        int HP;
-        int SP;
-        int MP;
+        int maxHP;
+        int currentHP;
+        int maxSP;
+        int currentSP;
+        int maxMP;
+        int currentMP;
 
         // derived stats
         int armourRating;
@@ -56,7 +59,7 @@ namespace SQ
         bool Moving;
         bool Left = true, Right = true, Up = true, Down = true;
 
-        public int HP1 { get => HP; set => HP = value; }
+
         #endregion
 
         #region PlayerSpecificFunctions
@@ -78,6 +81,23 @@ namespace SQ
             AmountOfRows = amountOfRows;
             WidthGapBetweenFrame = widthGapBetweenFrame;
             HeightGapBetweenFrame = heightGapBetweenFrame;
+
+            INT = 50;
+            STR = 50;
+            DEX = 50;
+            WIL = 50;
+            CHA = 50;
+            VIT = 50;
+
+            maxHP = (3 * VIT + (5 * equippedHeavy));
+            currentHP = maxHP;
+            maxSP = (8 * STR + (5 * equippedMedium));
+            currentSP = maxSP;
+            maxMP = (8 * WIL + (5 * equippedLight));
+            currentMP = maxMP;
+
+
+
         }
 
         public void setMovementBools(bool up, bool left, bool right, bool down)

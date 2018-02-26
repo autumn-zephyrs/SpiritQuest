@@ -39,14 +39,15 @@ namespace SQ
         int currentSP;
         int maxMP;
         int currentMP;
+        int staminaRegen;
+        int magicRegen;
 
         // derived stats
         int armourRating;
-        int criticalRating;
+        int shieldRating;
+        int baseCriticalRating;
         int encourage;
         int block;
-        int staminaRegen;
-        int magicRegen;
         #endregion
 
         #region PlayerVariables
@@ -96,7 +97,17 @@ namespace SQ
             maxMP = (8 * WIL + (5 * equippedLight));
             currentMP = maxMP;
 
+            staminaRegen = (5 + (INT / 3) + (5 * equippedLight));
+            staminaRegen = (5 + (INT / 3) + (5 * equippedLight));
 
+<<<<<<< HEAD
+=======
+            armourRating = 0;
+            shieldRating = 0;
+            baseCriticalRating = (INT / 2);
+            encourage = (1 + (CHA / 100));
+            block = ((5 + shieldRating) + (VIT / 2));
+>>>>>>> c4c651027a28d0ef1d1d27eb55a27815ea661fa2
         }
 
         public void setMovementBools(bool up, bool left, bool right, bool down)

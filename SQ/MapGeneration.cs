@@ -191,7 +191,7 @@ namespace SQ
     public class TexturePosition
     {
 
-        Rectangle Position;
+        public Rectangle Position;
         Rectangle Source;
 
         public TexturePosition(Rectangle Pos, Rectangle source)

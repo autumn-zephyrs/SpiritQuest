@@ -25,10 +25,6 @@ namespace SQ
             map.CreateMap(content);
             player.setProperGridPosition(map.NumberOfFloorObjects);
         }
-
-
-        // For Mouse Control
-        private MouseState oldState;
       
         public override void Update(GameTime gameTime, Camera cam)
         {
@@ -50,17 +46,6 @@ namespace SQ
 
             menu.Update(gameTime, cam);
             base.Update(gameTime, cam);
-
-            //Brendan's Mouse Control
-
-            MouseState newState = Mouse.GetState();
-            if (newState.LeftButton == ButtonState.Pressed && oldState.LeftButton == ButtonState.Released)
-                {
-                    // Will add functionality here later.
-                }
-            oldState = newState;
-            int mousePosX = oldState.X + (int)cam.Position.X;
-            int mousePosY = oldState.Y + (int)cam.Position.Y;
 
         }
 

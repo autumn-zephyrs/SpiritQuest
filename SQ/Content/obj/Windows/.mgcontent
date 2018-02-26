@@ -4,7 +4,6 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-<<<<<<< HEAD
     <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/FadeImage.png</File>
     <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/font.spritefont</File>
     <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Character.png</File>
@@ -14,14 +13,5 @@
     <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/BaseLayer.png</File>
     <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Collisions.png</File>
     <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Layer2.png</File>
-=======
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/GroundTiles.png</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/FadeImage.png</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/font.spritefont</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/Character.png</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/Fence.png</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/menu.png</File>
-    <File>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/item_misc.png</File>
->>>>>>> ad44571bbb60347d9c6c5561adf6718dae7c78e8
   </SourceFiles>
 </SourceFileCollection>

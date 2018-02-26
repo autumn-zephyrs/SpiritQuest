@@ -97,7 +97,6 @@ namespace SQ
             currentMP = maxMP;
 
 
-
         }
 
         public void setMovementBools(bool up, bool left, bool right, bool down)

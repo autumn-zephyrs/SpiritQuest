@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<<<<<<< HEAD:SQ/Content/obj/Windows/BaseLayer.mgcontent
   <SourceFile>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/BaseLayer.png</SourceFile>
   <SourceTime>2018-02-13T14:27:40.5285057+00:00</SourceTime>
   <DestFile>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/bin/Windows/BaseLayer.xnb</DestFile>
-  <DestTime>2018-02-20T11:58:05.7409168+00:00</DestTime>
-=======
-  <SourceFile>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/GroundTiles.png</SourceFile>
-  <SourceTime>2018-02-13T11:52:50.4303113+00:00</SourceTime>
-  <DestFile>C:/Users/Toasty/Documents/SpiritQuest/SpiritQuest/SQ/Content/bin/Windows/GroundTiles.xnb</DestFile>
-  <DestTime>2018-02-22T15:32:27.850395+00:00</DestTime>
->>>>>>> ad44571bbb60347d9c6c5561adf6718dae7c78e8:SQ/Content/obj/Windows/GroundTiles.mgcontent
+  <DestTime>2018-02-23T18:36:20.0213292+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

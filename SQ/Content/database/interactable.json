@@ -1,0 +1,4322 @@
+[
+  {
+    "tag": "door_master",
+    "sprite id": 0,
+    "type": "door",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "misc_interactable_master",
+    "sprite id": 1,
+    "type": "interactable",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "book_master",
+    "sprite id": 2,
+    "type": "book",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "book_master",
+    "sprite id": 3,
+    "type": "book",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "book_master",
+    "sprite id": 4,
+    "type": "book",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "book_master",
+    "sprite id": 5,
+    "type": "book",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "gold_master",
+    "sprite id": 6,
+    "type": "gold",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "siver_master",
+    "sprite id": 7,
+    "type": "gold",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "copper_master",
+    "sprite id": 8,
+    "type": "gold",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 9,
+    "type": "",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 10,
+    "type": "",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 11,
+    "type": "",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 12,
+    "type": "",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 13,
+    "type": "",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 14,
+    "type": "",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 15,
+    "type": "",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "potion_master",
+    "sprite id": 16,
+    "type": "potion",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "potion_health",
+    "sprite id": 17,
+    "type": "potion",
+    "name": "Potion of Health",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "potion_stamina",
+    "sprite id": 18,
+    "type": "potion",
+    "name": "Potion of Stamina",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "potion_magic",
+    "sprite id": 19,
+    "type": "potion",
+    "name": "Potion of Magic",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_sword",
+    "sprite id": 20,
+    "type": "weapon",
+    "name": "Horn Sword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_axe",
+    "sprite id": 21,
+    "type": "weapon",
+    "name": "Horn Axe",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_spear",
+    "sprite id": 22,
+    "type": "weapon",
+    "name": "Horn Spear",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_javelin",
+    "sprite id": 23,
+    "type": "weapon",
+    "name": "Horn Javelin",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_bow",
+    "sprite id": 24,
+    "type": "weapon",
+    "name": "Horn Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_throwingknives",
+    "sprite id": 25,
+    "type": "weapon",
+    "name": "Horn Throwing Knives",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_dagger",
+    "sprite id": 26,
+    "type": "weapon",
+    "name": "Horn Dagger",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_fistweapon",
+    "sprite id": 27,
+    "type": "weapon",
+    "name": "Horn Fist Blades",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_staff",
+    "sprite id": 28,
+    "type": "weapon",
+    "name": "Horn Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "horn_ruan",
+    "sprite id": 29,
+    "type": "weapon",
+    "name": "Horn Ruan",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "iron_sword",
+    "sprite id": 30,
+    "type": "weapon",
+    "name": "Iron Sword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "iron_axe",
+    "sprite id": 31,
+    "type": "weapon",
+    "name": "Iron Axe",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "iron_spear",
+    "sprite id": 32,
+    "type": "weapon",
+    "name": "Iron Spear",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "iron_javelin",
+    "sprite id": 33,
+    "type": "weapon",
+    "name": "Iron Javelin",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "maple_bow",
+    "sprite id": 34,
+    "type": "weapon",
+    "name": "Maple Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "iron_throwingknives",
+    "sprite id": 35,
+    "type": "weapon",
+    "name": "Iron Darts",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "iron_dagger",
+    "sprite id": 36,
+    "type": "weapon",
+    "name": "Iron Dagger",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "iron_fistweapon",
+    "sprite id": 37,
+    "type": "weapon",
+    "name": "Iron Knuckles",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "maple_staff",
+    "sprite id": 38,
+    "type": "weapon",
+    "name": "Maple Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "quartz_altuator",
+    "sprite id": 39,
+    "type": "weapon",
+    "name": "Quartz Altuator",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "maple_erhu",
+    "sprite id": 40,
+    "type": "weapon",
+    "name": "Maple Erhu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "maple_ruan",
+    "sprite id": 41,
+    "type": "weapon",
+    "name": "Maple Ruan",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "maple_sheng",
+    "sprite id": 42,
+    "type": "weapon",
+    "name": "Maple Sheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_sword",
+    "sprite id": 43,
+    "type": "weapon",
+    "name": "Steel Sword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_mace",
+    "sprite id": 44,
+    "type": "weapon",
+    "name": "Steel Mace",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_axe",
+    "sprite id": 45,
+    "type": "weapon",
+    "name": "Steel Axe",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_axe2",
+    "sprite id": 46,
+    "type": "weapon",
+    "name": "Steel Double-Headed Axe",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_spear",
+    "sprite id": 47,
+    "type": "weapon",
+    "name": "Steel Spear",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_spear2",
+    "sprite id": 48,
+    "type": "weapon",
+    "name": "Steel Pike",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_javelin",
+    "sprite id": 49,
+    "type": "weapon",
+    "name": "Steel Javelin",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "ruby_spiritbeam",
+    "sprite id": 50,
+    "type": "weapon",
+    "name": "Ruby Spiritbeam",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "teak_bow",
+    "sprite id": 51,
+    "type": "weapon",
+    "name": "Teak Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_crossbow",
+    "sprite id": 52,
+    "type": "weapon",
+    "name": "Steel Crossbow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_throwingknives",
+    "sprite id": 53,
+    "type": "weapon",
+    "name": "Steel Throwing Knives",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_throwingknives2",
+    "sprite id": 54,
+    "type": "weapon",
+    "name": "Steel Throwing Stars",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_dagger",
+    "sprite id": 55,
+    "type": "weapon",
+    "name": "Steel Dagger",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_shortsword",
+    "sprite id": 56,
+    "type": "weapon",
+    "name": "Steel Shortsword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "teak_staff",
+    "sprite id": 57,
+    "type": "weapon",
+    "name": "Teak Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_magwhip_fire",
+    "sprite id": 58,
+    "type": "weapon",
+    "name": "Steel Firebite Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_magwhip_ice",
+    "sprite id": 59,
+    "type": "weapon",
+    "name": "Steel Frostbite Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "ruby_altuator",
+    "sprite id": 60,
+    "type": "weapon",
+    "name": "Ruby Altuator",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "steel_spellthrower",
+    "sprite id": 61,
+    "type": "weapon",
+    "name": "Steel Spellthrower",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "ruby_magipistol",
+    "sprite id": 62,
+    "type": "weapon",
+    "name": "Ruby Magipistol",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "teak_erhu",
+    "sprite id": 63,
+    "type": "weapon",
+    "name": "Teak Erhu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "teak_ruan",
+    "sprite id": 64,
+    "type": "weapon",
+    "name": "Teak Ruan",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "teak_sheng",
+    "sprite id": 65,
+    "type": "weapon",
+    "name": "Teak Sheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "teak_guzheng",
+    "sprite id": 66,
+    "type": "weapon",
+    "name": "Teak Guzheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_sword",
+    "sprite id": 67,
+    "type": "weapon",
+    "name": "Stannum Sword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_axe",
+    "sprite id": 68,
+    "type": "weapon",
+    "name": "Stannum Axe",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_axe2",
+    "sprite id": 69,
+    "type": "weapon",
+    "name": "Stannum Mace",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_spear",
+    "sprite id": 70,
+    "type": "weapon",
+    "name": "Stannum Pike",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_javelin",
+    "sprite id": 71,
+    "type": "weapon",
+    "name": "Stannum Javelin",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "sapphire_spiritbeam",
+    "sprite id": 72,
+    "type": "weapon",
+    "name": "Sapphire Spiritbeam",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_bow",
+    "sprite id": 73,
+    "type": "weapon",
+    "name": "Stannum Coated Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_crossbow",
+    "sprite id": 74,
+    "type": "weapon",
+    "name": "Stannum Chukonu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_throwingknives",
+    "sprite id": 75,
+    "type": "weapon",
+    "name": "Stannum Throwing Knives",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_throwingknives2",
+    "sprite id": 76,
+    "type": "weapon",
+    "name": "Stannum Throwing Stars",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_throwingknives3",
+    "sprite id": 77,
+    "type": "weapon",
+    "name": "Stannum Darts",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_dagger",
+    "sprite id": 78,
+    "type": "weapon",
+    "name": "Stannum Dagger",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_shortsword",
+    "sprite id": 79,
+    "type": "weapon",
+    "name": "Stannum Swortsword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_staff",
+    "sprite id": 80,
+    "type": "weapon",
+    "name": "Stannum Coated Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_magwhip_fire",
+    "sprite id": 81,
+    "type": "weapon",
+    "name": "Stannum Ember Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_magwhip_ice",
+    "sprite id": 82,
+    "type": "weapon",
+    "name": "Stannum Chill Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_magwhip_shock",
+    "sprite id": 83,
+    "type": "weapon",
+    "name": "Stannum Spark Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "sapphire_altuator",
+    "sprite id": 84,
+    "type": "weapon",
+    "name": "Sapphire Altuator",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_spellthrower",
+    "sprite id": 85,
+    "type": "weapon",
+    "name": "Stannum Spellthrower",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "sapphire_magipistol",
+    "sprite id": 86,
+    "type": "weapon",
+    "name": "Sapphire Magipistol",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "stannum_vocalizer",
+    "sprite id": 87,
+    "type": "weapon",
+    "name": "Stannum Vocalizer",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "quartz_axe",
+    "sprite id": 88,
+    "type": "weapon",
+    "name": "Quartz Mace",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "quartz_spear",
+    "sprite id": 89,
+    "type": "weapon",
+    "name": "Quartz Polehammer",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "emerald_spiritbeam",
+    "sprite id": 90,
+    "type": "weapon",
+    "name": "Emerald Spiritbeam",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "quartz_javelin",
+    "sprite id": 91,
+    "type": "weapon",
+    "name": "Quartz Javelin",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "lychee_bow",
+    "sprite id": 92,
+    "type": "weapon",
+    "name": "Lycheewood Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "quartz_throwingknives",
+    "sprite id": 93,
+    "type": "weapon",
+    "name": "Quartz Throwing Hammers",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "quartz_throwingknives2",
+    "sprite id": 94,
+    "type": "weapon",
+    "name": "Quartz Needles",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "lychee_staff",
+    "sprite id": 95,
+    "type": "weapon",
+    "name": "Lycheewood Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "lychee_erhu",
+    "sprite id": 96,
+    "type": "weapon",
+    "name": "Lycheewood Erhu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "lychee_ruan",
+    "sprite id": 97,
+    "type": "weapon",
+    "name": "Lycheewood Ruan",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "lychee_sheng",
+    "sprite id": 98,
+    "type": "weapon",
+    "name": "Lycheewood Sheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "lychee_guzheng",
+    "sprite id": 99,
+    "type": "weapon",
+    "name": "Lycheewood Guzheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "osokam_sword",
+    "sprite id": 100,
+    "type": "weapon",
+    "name": "Osokam Sword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "osokam_spear",
+    "sprite id": 101,
+    "type": "weapon",
+    "name": "Osokam Halberd",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "glass_spiritbeam",
+    "sprite id": 102,
+    "type": "weapon",
+    "name": "Focused Glass Spiritbeam",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "osokam_javelin",
+    "sprite id": 103,
+    "type": "weapon",
+    "name": "Osokam Javelin",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "rosewood_bow",
+    "sprite id": 104,
+    "type": "weapon",
+    "name": "Rosewood Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "osokam_throwingknives",
+    "sprite id": 105,
+    "type": "weapon",
+    "name": "Osokam Throwing Knives",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "osokam_dagger",
+    "sprite id": 106,
+    "type": "weapon",
+    "name": "Osokam Tanto",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "osokam_shortsword",
+    "sprite id": 107,
+    "type": "weapon",
+    "name": "Osokam Shortsword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "rosewood_staff",
+    "sprite id": 108,
+    "type": "weapon",
+    "name": "Rosewood Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "rosewood_staff2",
+    "sprite id": 109,
+    "type": "weapon",
+    "name": "Rosewood Wand",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "glass_altuator",
+    "sprite id": 110,
+    "type": "weapon",
+    "name": "Focused Glass Altuator",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "glass_magipistol",
+    "sprite id": 111,
+    "type": "weapon",
+    "name": "Focused Glass Magipistol",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "rosewood_erhu",
+    "sprite id": 112,
+    "type": "weapon",
+    "name": "Rosewood Erhu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "rosewood_ruan",
+    "sprite id": 113,
+    "type": "weapon",
+    "name": "Rosewood Ruan",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "rosewood_sheng",
+    "sprite id": 114,
+    "type": "weapon",
+    "name": "Rosewood Sheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "rosewood_guzheng",
+    "sprite id": 115,
+    "type": "weapon",
+    "name": "Rosewood Guzheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_axe",
+    "sprite id": 116,
+    "type": "weapon",
+    "name": "Kuarasapik Axe",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_mace",
+    "sprite id": 117,
+    "type": "weapon",
+    "name": "Kuarasapik Mace",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_warhammer",
+    "sprite id": 118,
+    "type": "weapon",
+    "name": "Kuarasapik Warhammer",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_spear",
+    "sprite id": 119,
+    "type": "weapon",
+    "name": "Kuarasapik Polehammer",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_javelin",
+    "sprite id": 120,
+    "type": "weapon",
+    "name": "Kuarasapik Javelin",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mahogany_bow",
+    "sprite id": 121,
+    "type": "weapon",
+    "name": "Mahogany Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_crossbow",
+    "sprite id": 122,
+    "type": "weapon",
+    "name": "Kuarasapik Crossbow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_throwingknives",
+    "sprite id": 123,
+    "type": "weapon",
+    "name": "Kuarasapik Throwing Axes",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mahogany_staff",
+    "sprite id": 124,
+    "type": "weapon",
+    "name": "Mahogany Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mahogany_staff2",
+    "sprite id": 125,
+    "type": "weapon",
+    "name": "Mahogany Wand",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_magwhip_fire",
+    "sprite id": 126,
+    "type": "weapon",
+    "name": "Kuarasapik Flame Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_magwhip_ice",
+    "sprite id": 127,
+    "type": "weapon",
+    "name": "Kuarasapik Ice Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_magwhip_shock",
+    "sprite id": 128,
+    "type": "weapon",
+    "name": "Kuarasapik Shock Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "kuarasapik_magwhip_posion",
+    "sprite id": 129,
+    "type": "weapon",
+    "name": "Kuarasapik Poison Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "diamond_altuator",
+    "sprite id": 130,
+    "type": "weapon",
+    "name": "Diamond Altuator",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "diamond_magipistol",
+    "sprite id": 131,
+    "type": "weapon",
+    "name": "Diamond Magipistol",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mahogany_erhu",
+    "sprite id": 132,
+    "type": "weapon",
+    "name": "Mahogany Erhu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mahogany_ruan",
+    "sprite id": 133,
+    "type": "weapon",
+    "name": "Mahogany Ruan",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mahogany_sheng",
+    "sprite id": 134,
+    "type": "weapon",
+    "name": "Mahogany Sheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mahogany_guzheng",
+    "sprite id": 135,
+    "type": "weapon",
+    "name": "Mahogany Guzheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_sword",
+    "sprite id": 136,
+    "type": "weapon",
+    "name": "Jade Sword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_axe",
+    "sprite id": 137,
+    "type": "weapon",
+    "name": "Jade Battleaxe",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_axe2",
+    "sprite id": 138,
+    "type": "weapon",
+    "name": "Jade Mace",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_spear",
+    "sprite id": 139,
+    "type": "weapon",
+    "name": "Jade Halberd",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_spiritbeam",
+    "sprite id": 140,
+    "type": "weapon",
+    "name": "Jade Spiritbeam",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "paper_bow",
+    "sprite id": 141,
+    "type": "weapon",
+    "name": "Jade Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_crossbow",
+    "sprite id": 142,
+    "type": "weapon",
+    "name": "Jade Chokonu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_throwingknives",
+    "sprite id": 143,
+    "type": "weapon",
+    "name": "Jade Throwing Knives",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_staff",
+    "sprite id": 144,
+    "type": "weapon",
+    "name": "Jade Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_magwhip_fire",
+    "sprite id": 145,
+    "type": "weapon",
+    "name": "Jade Blaze Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_magwhip_ice",
+    "sprite id": 146,
+    "type": "weapon",
+    "name": "Jade Freeze Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_magwhip_shock",
+    "sprite id": 147,
+    "type": "weapon",
+    "name": "Jade Thunder Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_magwhip_spirit",
+    "sprite id": 148,
+    "type": "weapon",
+    "name": "Jade Soul Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_magwhip_poison",
+    "sprite id": 149,
+    "type": "weapon",
+    "name": "Jade Toxic Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_altuator",
+    "sprite id": 150,
+    "type": "weapon",
+    "name": "Jade Altuator",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_spellthrower",
+    "sprite id": 151,
+    "type": "weapon",
+    "name": "Jade Spellthrower",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_magipistol",
+    "sprite id": 152,
+    "type": "weapon",
+    "name": "Jade Magipistol",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_erhu",
+    "sprite id": 153,
+    "type": "weapon",
+    "name": "Jade Erhu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_ruan",
+    "sprite id": 154,
+    "type": "weapon",
+    "name": "Jade Ruan",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "jade_guzheng",
+    "sprite id": 155,
+    "type": "weapon",
+    "name": "Jade Guzheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starmetal_sword",
+    "sprite id": 156,
+    "type": "weapon",
+    "name": "Starmetal Sword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starmetal_sword2",
+    "sprite id": 157,
+    "type": "weapon",
+    "name": "Starmetal Greatsword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starmetal_spear",
+    "sprite id": 158,
+    "type": "weapon",
+    "name": "Starmetal Halberd",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mourningwood_bow",
+    "sprite id": 159,
+    "type": "weapon",
+    "name": "Mourningwood Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starmetal_crossbow",
+    "sprite id": 160,
+    "type": "weapon",
+    "name": "Starmetal Crossbow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starmetal_throwingknives",
+    "sprite id": 161,
+    "type": "weapon",
+    "name": "Starmetal Boomerang",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starmetal_dagger",
+    "sprite id": 162,
+    "type": "weapon",
+    "name": "Starmetal Tanto",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starmetal_shortsword",
+    "sprite id": 163,
+    "type": "weapon",
+    "name": "Starmetal Wakazishi",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starstone_staff",
+    "sprite id": 164,
+    "type": "weapon",
+    "name": "Starstone Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starstone_altuator",
+    "sprite id": 165,
+    "type": "weapon",
+    "name": "Starstone Altuator",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "starstone_magipistol",
+    "sprite id": 166,
+    "type": "weapon",
+    "name": "Starstone Magipistol",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mourningwood_erhu",
+    "sprite id": 167,
+    "type": "weapon",
+    "name": "Mourningwood Erhu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mourningwood_ruan",
+    "sprite id": 168,
+    "type": "weapon",
+    "name": "Mourningwood Ruan",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "mourningwood_sheng",
+    "sprite id": 169,
+    "type": "weapon",
+    "name": "Mourningwood Sheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_sword",
+    "sprite id": 170,
+    "type": "weapon",
+    "name": "Spirit Jade Sword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_sword2",
+    "sprite id": 171,
+    "type": "weapon",
+    "name": "Spirit Jade Greatsword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_axe",
+    "sprite id": 172,
+    "type": "weapon",
+    "name": "Spirit Jade Axe",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_axe2",
+    "sprite id": 173,
+    "type": "weapon",
+    "name": "Spirit Jade Mace",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_spear",
+    "sprite id": 174,
+    "type": "weapon",
+    "name": "Spirit Jade Mace",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_spiritbeam",
+    "sprite id": 175,
+    "type": "weapon",
+    "name": "Spirit Jade Kanbeam",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_javelin",
+    "sprite id": 176,
+    "type": "weapon",
+    "name": "Spirit Jade Javelin",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritwood_bow",
+    "sprite id": 177,
+    "type": "weapon",
+    "name": "Spiritwood Bow",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_crossbow",
+    "sprite id": 178,
+    "type": "weapon",
+    "name": "Spirit Jade Chokonu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_throwingknives",
+    "sprite id": 179,
+    "type": "weapon",
+    "name": "Spirit Jade Throwing Knives",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_throwingknives2",
+    "sprite id": 180,
+    "type": "weapon",
+    "name": "Spirit Jade Throwing Stars",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_dagger",
+    "sprite id": 181,
+    "type": "weapon",
+    "name": "Spirit Jade Dagger",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritwood_staff",
+    "sprite id": 182,
+    "type": "weapon",
+    "name": "Spiritwood Staff",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_magwhip_fire",
+    "sprite id": 183,
+    "type": "weapon",
+    "name": "Spirit Jade Inferno Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_magwhip_ice",
+    "sprite id": 184,
+    "type": "weapon",
+    "name": "Spirit Jade Blizzard Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_magwhip_shock",
+    "sprite id": 185,
+    "type": "weapon",
+    "name": "Spirit Jade Storm Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_magwhip_spirit",
+    "sprite id": 186,
+    "type": "weapon",
+    "name": "Spirit Jade Mystic Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_magwhip_poison",
+    "sprite id": 187,
+    "type": "weapon",
+    "name": "Spirit Jade Death Magwhip",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_altuator",
+    "sprite id": 188,
+    "type": "weapon",
+    "name": "Spirit Jade Altuator",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_spellthrower",
+    "sprite id": 189,
+    "type": "weapon",
+    "name": "Spirit Jade Spellthrower",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_magipistol",
+    "sprite id": 190,
+    "type": "weapon",
+    "name": "Spirit Jade Magipistol",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritwood_erhu",
+    "sprite id": 191,
+    "type": "weapon",
+    "name": "Spiritwood Erhu",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritwood_ruan",
+    "sprite id": 192,
+    "type": "weapon",
+    "name": "Spiritwood Ruan",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritwood_sheng",
+    "sprite id": 193,
+    "type": "weapon",
+    "name": "Spiritwood Sheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritwood_guzheng",
+    "sprite id": 194,
+    "type": "weapon",
+    "name": "Spiritwood Guzheng",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "spiritjade_vocalizer",
+    "sprite id": 195,
+    "type": "weapon",
+    "name": "Spiritwood Vocalizer",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 196,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 197,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 198,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 199,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 200,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 201,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 202,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 203,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 204,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 205,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 206,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 207,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 208,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 209,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 210,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 211,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 212,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 213,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 214,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 215,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 216,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 217,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 218,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 219,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 220,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 221,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 222,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 223,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 224,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 225,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 226,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 227,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 228,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 229,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 230,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 231,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 232,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 233,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 234,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 235,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 236,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 237,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 238,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 239,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 240,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 241,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 242,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 243,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 244,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 245,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 246,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 247,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 248,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 249,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 250,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 251,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 252,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 253,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 254,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 255,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 256,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 257,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 258,
+    "type": "weapon",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "test_sword",
+    "sprite id": 259,
+    "type": "weapon",
+    "name": "Brendan's Super Test Sword",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 260,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 261,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 262,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 263,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 264,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 265,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 266,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 267,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 268,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 269,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 270,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 271,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 272,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 273,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 274,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 275,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 276,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 277,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 278,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 279,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 280,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 281,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 282,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 283,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 284,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 285,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 286,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 287,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 288,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 289,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 290,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 291,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 292,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 293,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 294,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 295,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 296,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 297,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 298,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 299,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 300,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 301,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 302,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 303,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 304,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 305,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 306,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 307,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 308,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 309,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 310,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 311,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 312,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 313,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 314,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 315,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 316,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 317,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 318,
+    "type": "armour",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "test_armour",
+    "sprite id": 319,
+    "type": "armour",
+    "name": "Brendan's Super Test Boots",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 320,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 321,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 322,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 323,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 324,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 325,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 326,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 327,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 328,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 329,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 330,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 331,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 332,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 333,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 334,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 335,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 336,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 337,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 338,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 339,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 340,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 341,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 342,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 343,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 344,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 345,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 346,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 347,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 348,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 349,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 350,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 351,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 352,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 353,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 354,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 355,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 356,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 357,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 358,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 359,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 360,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 361,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 362,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 363,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 364,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 365,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 366,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 367,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 368,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 369,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 370,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 371,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 372,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 373,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 374,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 375,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 376,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 377,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 378,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 379,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 380,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 381,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 382,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 383,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 384,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 385,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 386,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 387,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 388,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 389,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 390,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 391,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 392,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 393,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 394,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 395,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 396,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 397,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 398,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 399,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 400,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 401,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 402,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 403,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 404,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 405,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 406,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 407,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 408,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 409,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 410,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 411,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 412,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 413,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 414,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 415,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 416,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 417,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 418,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 419,
+    "type": "key",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 420,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 421,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 422,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 423,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 424,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 425,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 426,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 427,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 428,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 429,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 430,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 431,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 432,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 433,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 434,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 435,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 436,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 437,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 438,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 439,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 440,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 441,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 442,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 443,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 444,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 445,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 446,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 447,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 448,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 449,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 450,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 451,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 452,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 453,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 454,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 455,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 456,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 457,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 458,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 459,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 460,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 461,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 462,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 463,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 464,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 465,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 466,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 467,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 468,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 469,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 470,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 471,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 472,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 473,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 474,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 475,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 476,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 477,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 478,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 479,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 480,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 481,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 482,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 483,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 484,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 485,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 486,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 487,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 488,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 489,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 490,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 491,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 492,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 493,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 494,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 495,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 496,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 497,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 498,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 499,
+    "type": "food",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "charged_ruby",
+    "sprite id": 500,
+    "type": "crystal",
+    "name": "Charged Ruby",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "charged_sapphire",
+    "sprite id": 501,
+    "type": "crystal",
+    "name": "Charged Sapphire",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "charged_emerald",
+    "sprite id": 502,
+    "type": "crystal",
+    "name": "Charged Emerald",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "charged_diamond",
+    "sprite id": 503,
+    "type": "crystal",
+    "name": "Charged Diamond",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "charged_amythest",
+    "sprite id": 504,
+    "type": "crystal",
+    "name": "Charged Amythest",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "charged_quartz",
+    "sprite id": 505,
+    "type": "crystal",
+    "name": "Charged Quartz",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 506,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 507,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 508,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 509,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 510,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 511,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 512,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 513,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 514,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 515,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 516,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 517,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 518,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 519,
+    "type": "crystal",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "gem_ruby",
+    "sprite id": 520,
+    "type": "misc",
+    "name": "Ruby",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "gem_sapphire",
+    "sprite id": 521,
+    "type": "misc",
+    "name": "Sapphire",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "gem_emerald",
+    "sprite id": 522,
+    "type": "misc",
+    "name": "Emerald",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "gem_diamond",
+    "sprite id": 523,
+    "type": "misc",
+    "name": "Diamond",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "gem_amythest",
+    "sprite id": 524,
+    "type": "misc",
+    "name": "Amythest",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "gem_quartz",
+    "sprite id": 525,
+    "type": "misc",
+    "name": "Quartz",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 526,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 527,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 528,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 529,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 530,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 531,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 532,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 533,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 534,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 535,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 536,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 537,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 538,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  },
+  {
+    "tag": "",
+    "sprite id": 539,
+    "type": "misc",
+    "name": "",
+    "value": "",
+    "weight": ""
+  }
+]

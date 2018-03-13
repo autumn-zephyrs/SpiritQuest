@@ -90,9 +90,7 @@ C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\bin\Windows\x86\Debug\Sh
 C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Character.xnb
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\FadeImage.xnb
-C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Fence.xnb
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\font.xnb
-C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\GroundTiles.xnb
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\menu.xnb
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SQ.exe
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SQ.pdb
@@ -125,3 +123,8 @@ C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\bin\Windows\x86\Debug\Co
 C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Items.xnb
 C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer1.xnb
 C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer2.xnb
+C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\BaseLayer.xnb
+C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Collisions.xnb
+C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Items.xnb
+C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer1.xnb
+C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer2.xnb

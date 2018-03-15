@@ -30,9 +30,7 @@ C:\Users\bingo\Desktop\Game Folder\SQ\SQ\bin\Windows\x86\Debug\LitJson.dll
 C:\Users\bingo\Desktop\Game Folder\SQ\SQ\bin\Windows\x86\Debug\Content\Fence.xnb
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Character.xnb
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\FadeImage.xnb
-C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Fence.xnb
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\font.xnb
-C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\GroundTiles.xnb
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SQ.exe
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\SQ.pdb
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\LitJson.dll
@@ -117,7 +115,6 @@ C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.csproj.CoreCompileInputs.cache
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.exe
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\obj\x86\Debug\SQ.pdb
-C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\item_misc.xnb
 C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\BaseLayer.xnb
 C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Collisions.xnb
 C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Items.xnb
@@ -128,3 +125,8 @@ C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\D
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Items.xnb
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer1.xnb
 C:\Users\tasty_000\Documents\GitHub\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer2.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\BaseLayer.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Collisions.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Items.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer1.xnb
+C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer2.xnb

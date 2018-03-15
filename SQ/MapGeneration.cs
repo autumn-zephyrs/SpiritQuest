@@ -187,6 +187,16 @@ namespace SQ
                 layer.Draw(spriteBatch);
             }
         }
+
+        public TexturePosition[] getItemTextures()
+        {
+            return MapLayers[4].MapTexturePositions;
+        }
+
+        public int[] getItemValues()
+        {
+            return MapLayers[4].MapNumberArray;
+        }
     }
     public class TexturePosition
     {
@@ -209,7 +219,7 @@ namespace SQ
     public class MapLayer
     {
         Texture2D MapTextures;
-        TexturePosition[] MapTexturePositions;
+        public TexturePosition[] MapTexturePositions { get; private set; }
         public int[] MapNumberArray { get; private set; }
         public int NumberOfFloorObjects { get; private set; }
         int MapDataNumber;

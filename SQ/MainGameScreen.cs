@@ -16,6 +16,8 @@ namespace SQ
         MenuManager menu;
         MapGeneration map;
         Player player;
+        Interactor interactor;
+
         public override void LoadContent(ContentManager content)
         {
             menu = new MenuManager();
@@ -24,6 +26,8 @@ namespace SQ
             player = new Player(content.Load<Texture2D>("Character"), new Rectangle(0,0,32,42),new Rectangle(0,0,16,21),4,100,0,2,0,0);
             map.CreateMap(content);
             player.setProperGridPosition(map.NumberOfFloorObjects);
+            interactor = new Interactor();
+            interactor.LoadContent(content);
         }
       
         public override void Update(GameTime gameTime, Camera cam)
@@ -46,7 +50,8 @@ namespace SQ
 
             menu.Update(gameTime, cam);
             base.Update(gameTime, cam);
-
+            interactor.Update(gameTime, cam, map.getItemTextures(), map.getItemValues());
+            
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -58,6 +63,7 @@ namespace SQ
             map.DrawAfterPlayer(player.getProperGridPosition(), spriteBatch);
             menu.Draw(spriteBatch);
             base.Draw(spriteBatch);
+            interactor.Draw(spriteBatch);
         }
     }
 }

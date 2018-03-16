@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SQ
 {
-    public class PickupableItem
+    public class InventoryItem
     {
     }
 }

@@ -97,8 +97,11 @@ namespace SQ
             maxMP = (8 * WIL + (5 * equippedLight));
             currentMP = maxMP;
 
-            staminaRegen = (5 + (INT / 3) + (5 * equippedLight));
-            staminaRegen = (5 + (INT / 3) + (5 * equippedLight));
+            staminaRegen = (5 + (INT / 3) + (5 * equippedMedium));
+            staminaRegen = (5 + (INT / 3) + (5 * equippedMedium));
+
+            magicRegen = (5 + (INT / 3) + (5 * equippedLight));
+            magicRegen = (5 + (INT / 3) + (5 * equippedLight));
 
             armourRating = 0;
             shieldRating = 0;

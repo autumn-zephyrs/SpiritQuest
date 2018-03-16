@@ -17,6 +17,8 @@ namespace SQ
         string tag;
         public Vector2 textPos;
 
+        public bool presentItem;
+
         public Interactor()
         {
         }

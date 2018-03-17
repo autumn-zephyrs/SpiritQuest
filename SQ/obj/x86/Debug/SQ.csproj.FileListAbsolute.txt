@@ -130,3 +130,4 @@ C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Conte
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Items.xnb
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer1.xnb
 C:\Users\Toasty\Documents\SpiritQuest\SpiritQuest\SQ\bin\Windows\x86\Debug\Content\Layer2.xnb
+C:\Users\bingo\OneDrive\Documents\GitHub\SpiritQuest\SQ\obj\x86\Debug\SQ.csproj.CopyComplete

@@ -50,7 +50,7 @@ namespace SQ
 
             menu.Update(gameTime, cam);
             base.Update(gameTime, cam);
-            interactor.Update(gameTime, cam, map.getItemTextures(), map.getItemValues());
+            interactor.Update(gameTime, cam, map.getItemTextures(), map.getItemValues(), player.SpritePOS);
             
         }
 

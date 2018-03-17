@@ -54,7 +54,7 @@ namespace SQ
             ItemFont = content.Load<SpriteFont>("font");        
         }
  
-        public void Update(GameTime gameTime, Camera cam, TexturePosition[] ItemPositions, int[] ItemNumberArray)
+        public void Update(GameTime gameTime, Camera cam, TexturePosition[] ItemPositions, int[] ItemNumberArray, Rectangle PlayerPos) 
         {
 
             

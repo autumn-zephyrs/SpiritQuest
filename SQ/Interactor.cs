@@ -13,7 +13,7 @@ namespace SQ
 
         private string itemID;
         private MouseState oldState;
-        public MouseState masterState;
+        public bool WithinReach;
         public SpriteFont ItemFont;
         string tag;
         string type;
@@ -22,26 +22,24 @@ namespace SQ
         public int posY;
         public Vector2 textPos;
         public Vector2 textPos2;
-        public Vector2 PlayerPos;
+        public Rectangle PlayerReach;
+
 
         public bool presentItem;
         public short textBufferX = 20;
         public short textBufferY = 5;
-
-        Player player;
 
         public Interactor()
         {
         }
         public void Draw (SpriteBatch spriteBatch)
         {
-            MouseState masterState = Mouse.GetState();
             if (tag != null)
             {
                 if (presentItem == true)
                 {
                     spriteBatch.DrawString(ItemFont, tag, textPos, Color.White);
-                    //if (((PlayerPos.X - masterState.X > -86) && (PlayerPos.X - masterState.X < 86)) && ((PlayerPos.Y - masterState.Y > -86) && (PlayerPos.Y - masterState.Y < 86)))
+                    //if (WithinReach == true)
                     {
                         spriteBatch.DrawString(ItemFont, type, textPos2, Color.White);
                     }
@@ -62,10 +60,13 @@ namespace SQ
             posX = (int)cam.Position.X + newState.Position.X;
             posY = (int)cam.Position.Y + newState.Position.Y;
             Rectangle MousePos = new Rectangle(posX,posY, 1, 1);
+            //Rectangle PlayerReach = new Rectangle((PlayerPos.X), (PlayerPos.Y), 96, 96);
+
             textPos = new Vector2(posX + textBufferX, posY - textBufferY);
             textPos2 = new Vector2(posX + textBufferX, posY - textBufferY - textBufferX);
 
             presentItem = false;
+            WithinReach = false;
             
             for (int i = 0; i < ItemPositions.Length; i++)
             {
@@ -80,10 +81,14 @@ namespace SQ
                         JsonData jsonData = JsonMapper.ToObject(itemID);
                         tag = jsonData[SpriteNumber]["tag"].ToString();
                         type = jsonData[SpriteNumber]["type"].ToString();
+                        if (Rectangle.Intersect(ItemPositions[i].Position, PlayerReach).IsEmpty == false)
+                        {
+                            WithinReach = true;
+                        }
                         if (newState.LeftButton == ButtonState.Pressed && oldState.LeftButton == ButtonState.Released)
-                            {
-                            //Add item to inventory, and remove item from world.
-                            }
+                        {
+                        //Add item to inventory, and remove item from world.
+                        }
                     }                 
                 }
             }

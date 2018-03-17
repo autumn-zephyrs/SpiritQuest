@@ -67,26 +67,26 @@ namespace SQ
 
             presentItem = false;
             
-                for (int i = 0; i < ItemPositions.Length; i++)
+            for (int i = 0; i < ItemPositions.Length; i++)
+            {
+                if (ItemPositions[i] != null)
                 {
-                    if (ItemPositions[i] != null)
+                    if (Rectangle.Intersect(MousePos, ItemPositions[i].Position).IsEmpty == false)
                     {
-                        if (Rectangle.Intersect(MousePos, ItemPositions[i].Position).IsEmpty == false)
-                        {
-                            presentItem = true;
+                        presentItem = true;
 
-                            int SpriteNumber = ItemNumberArray[i];
-                            itemID = File.ReadAllText("database/interactable.json");
-                            JsonData jsonData = JsonMapper.ToObject(itemID);
-                            tag = jsonData[SpriteNumber]["tag"].ToString();
-                            type = jsonData[SpriteNumber]["type"].ToString();
-                            if (newState.LeftButton == ButtonState.Pressed && oldState.LeftButton == ButtonState.Released)
-                                {
-                                //Add item to inventory, and remove item from world.
-                                }
-                        }                 
-                    }
+                        int SpriteNumber = ItemNumberArray[i];
+                        itemID = File.ReadAllText("database/interactable.json");
+                        JsonData jsonData = JsonMapper.ToObject(itemID);
+                        tag = jsonData[SpriteNumber]["tag"].ToString();
+                        type = jsonData[SpriteNumber]["type"].ToString();
+                        if (newState.LeftButton == ButtonState.Pressed && oldState.LeftButton == ButtonState.Released)
+                            {
+                            //Add item to inventory, and remove item from world.
+                            }
+                    }                 
                 }
+            }
 
             
             oldState = newState;

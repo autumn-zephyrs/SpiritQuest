@@ -22,6 +22,7 @@ namespace SQ
         int INT;
         int CHA;
         int VIT;
+        int LCK;
 
         // behind the scenes stuff
         int currentExperience;
@@ -89,6 +90,7 @@ namespace SQ
             WIL = 50;
             CHA = 50;
             VIT = 50;
+            LCK = 50;
 
             maxHP = (3 * VIT + (5 * equippedHeavy));
             currentHP = maxHP;

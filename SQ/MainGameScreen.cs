@@ -23,7 +23,7 @@ namespace SQ
             menu = new MenuManager();
             menu.LoadContent(content);
             map = new MapGeneration();
-            player = new Player(content.Load<Texture2D>("Character"), new Rectangle(0,0,32,42),new Rectangle(0,0,16,21),4,100,0,2,0,0);
+            player = new Player(content.Load<Texture2D>("Character"), new Rectangle(0,0,32,64),new Rectangle(0,0,32,64),4,100,0,2,0,0);
             map.CreateMap(ref content);
             player.setProperGridPosition(map.NumberOfFloorObjects);
             interactor = new Interactor();

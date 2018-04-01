@@ -74,7 +74,7 @@ namespace SQ
             MovementSpeed = movementSpeed;
             SpriteTexture = spriteTexture;
             SpritePOS = spritePOS;
-            GridPositionOffset = new Vector2((SpritePOS.Width / 2) - 16, (SpritePOS.Height) - 16);
+            GridPositionOffset = new Vector2((SpritePOS.Width / 2) - 16, (SpritePOS.Height) );
             SpritePOS.X = (int)PositionOnGrid.X * 32 - (int)GridPositionOffset.X;
             SpritePOS.Y = (int)PositionOnGrid.Y * 32 - (int)GridPositionOffset.Y;
             SourceRectangle = sourceRect;

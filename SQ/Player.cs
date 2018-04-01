@@ -130,9 +130,9 @@ namespace SQ
         {
             return ProperGridPosition;
         }
-        public override void Animation(GameTime gameTime)
+        public override void Animation(ref GameTime gameTime)
         {
-            base.Animation(gameTime);
+            base.Animation(ref gameTime);
 
             ElapsedTime += gameTime.ElapsedGameTime.TotalMilliseconds;
 
@@ -156,9 +156,9 @@ namespace SQ
         #endregion
 
         #region BaseFunctions(UPDATE,DRAW)
-        public override void Update(GameTime gameTime)
+        public override void Update(ref GameTime gameTime)
         {
-            base.Update(gameTime);
+            base.Update(ref gameTime);
 
             KeyboardState KB = Keyboard.GetState();
             if (KB.IsKeyDown(Keys.W) && Moving == false)
@@ -205,7 +205,7 @@ namespace SQ
 
             if (Moving)
             {
-                Animation(gameTime);
+                Animation(ref gameTime);
                 
                 if (SpritePOS.X > PositionOnGrid.X * 32 - GridPositionOffset.X )
                 {
@@ -235,9 +235,9 @@ namespace SQ
             }
         }
 
-        public override void Draw(SpriteBatch spriteBatch)
+        public override void Draw(ref SpriteBatch spriteBatch)
         {
-            base.Draw(spriteBatch);
+            base.Draw(ref spriteBatch);
             spriteBatch.Draw(SpriteTexture, SpritePOS, SourceRectangle, Color.White);
         }
         #endregion

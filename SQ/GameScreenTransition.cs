@@ -97,7 +97,7 @@ namespace SQ
                         Content.Unload();
                     }
 
-                    NewGameScreen.LoadContent(Content);
+                    NewGameScreen.LoadContent(ref Content);
                     ScreenManager.Instance().CurrentGameScreen = NewGameScreen;
 
                     Alpha = 0.0f;

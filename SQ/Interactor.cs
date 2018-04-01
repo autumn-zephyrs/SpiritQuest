@@ -23,7 +23,7 @@ namespace SQ
         public Vector2 textPos;
         public Vector2 textPos2;
         public Rectangle PlayerReach;
-
+        JsonData jsonData;
 
         public bool presentItem;
         public short textBufferX = 20;
@@ -31,8 +31,10 @@ namespace SQ
 
         public Interactor()
         {
+            itemID = File.ReadAllText("database/interactable.json");
+            jsonData = JsonMapper.ToObject(itemID);
         }
-        public void Draw (SpriteBatch spriteBatch)
+        public void Draw (ref SpriteBatch spriteBatch)
         {
             if (tag != null)
             {
@@ -47,12 +49,12 @@ namespace SQ
             }
         }
 
-        public void LoadContent (ContentManager content)
+        public void LoadContent (ref ContentManager content)
         { 
             ItemFont = content.Load<SpriteFont>("font");        
         }
  
-        public void Update(GameTime gameTime, Camera cam, TexturePosition[] ItemPositions, int[] ItemNumberArray, Rectangle PlayerPos) 
+        public void Update(ref GameTime gameTime, ref Camera cam, TexturePosition[] ItemPositions, int[] ItemNumberArray, ref Rectangle PlayerPos) 
         {
 
             
@@ -77,8 +79,7 @@ namespace SQ
                         presentItem = true;
 
                         int SpriteNumber = ItemNumberArray[i];
-                        itemID = File.ReadAllText("database/interactable.json");
-                        JsonData jsonData = JsonMapper.ToObject(itemID);
+
                         tag = jsonData[SpriteNumber]["tag"].ToString();
                         type = jsonData[SpriteNumber]["type"].ToString();
                         if (Rectangle.Intersect(ItemPositions[i].Position, PlayerReach).IsEmpty == false)

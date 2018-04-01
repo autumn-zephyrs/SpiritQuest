@@ -20,7 +20,7 @@ namespace SQ
         List<MapLayer> MapLayers;
         JsonData jsonData;
         public int NumberOfFloorObjects;
-        public void CreateMap(ContentManager content)
+        public void CreateMap(ref ContentManager content)
         {
             MapLayers = new List<MapLayer>();
             if (!File.Exists("MapData/Ground.json"))
@@ -100,7 +100,7 @@ namespace SQ
             for (int i = 0; i <= 4; i++)
             {
                 MapLayers.Add(new MapLayer());
-                MapLayers[i].CreateMap(content, i);
+                MapLayers[i].CreateMap(ref content, i);
             }
             NumberOfFloorObjects = MapLayers[0].NumberOfFloorObjects;
 
@@ -164,27 +164,27 @@ namespace SQ
 
 
 
-        public void DrawBeforePlayer(int playerPos, SpriteBatch spriteBatch)
+        public void DrawBeforePlayer(int playerPos, ref SpriteBatch spriteBatch)
         {
             foreach(MapLayer layer in MapLayers)
             {
-                layer.DrawBeforePlayer(playerPos, spriteBatch);
+                layer.DrawBeforePlayer(playerPos,ref spriteBatch);
             }
         }
 
-        public void DrawAfterPlayer(int playerPos, SpriteBatch spriteBatch)
+        public void DrawAfterPlayer(int playerPos, ref SpriteBatch spriteBatch)
         {
             foreach (MapLayer layer in MapLayers)
             {
-                layer.DrawAfterPlayer(playerPos, spriteBatch);
+                layer.DrawAfterPlayer(playerPos, ref spriteBatch);
             }
         }
 
-        public void Draw(SpriteBatch spriteBatch)
+        public void Draw(ref SpriteBatch spriteBatch)
         {
             foreach (MapLayer layer in MapLayers)
             {
-                layer.Draw(spriteBatch);
+                layer.Draw(ref spriteBatch);
             }
         }
 
@@ -210,7 +210,7 @@ namespace SQ
             Source = source;
         }
 
-        public void Draw(SpriteBatch spriteBatch, Texture2D texture) 
+        public void Draw(ref SpriteBatch spriteBatch, Texture2D texture) 
         {
             spriteBatch.Draw(texture,Position,Source,Color.White);
         }
@@ -225,7 +225,7 @@ namespace SQ
         int MapDataNumber;
         public MapLayer() { }
 
-        public void CreateMap(ContentManager Content, int MapDataNumber ) 
+        public void CreateMap(ref ContentManager Content, int MapDataNumber ) 
         {
             JsonData jsonData = JsonMapper.ToObject(File.ReadAllText("MapData/Ground.json").ToString());
             JsonReader reader = new JsonReader(jsonData["MapData"][MapDataNumber].ToJson().ToString());
@@ -298,7 +298,7 @@ namespace SQ
         }
         
 
-        public void Draw(SpriteBatch spriteBatch)
+        public void Draw(ref SpriteBatch spriteBatch)
         {
             // if collisions or BaseLayer
             if(MapDataNumber == 0)
@@ -306,12 +306,12 @@ namespace SQ
                 foreach (TexturePosition t in MapTexturePositions)
                 {
                     if(t != null)
-                        t.Draw(spriteBatch, MapTextures);
+                        t.Draw(ref spriteBatch, MapTextures);
                 }
             }
         }
 
-        public void DrawAfterPlayer(int playerPos, SpriteBatch spriteBatch)
+        public void DrawAfterPlayer(int playerPos,ref SpriteBatch spriteBatch)
         {
             if (MapDataNumber == 1)
             {
@@ -321,7 +321,7 @@ namespace SQ
                     {
                         if (MapTexturePositions[i] != null)
                         {
-                            MapTexturePositions[i].Draw(spriteBatch, MapTextures);
+                            MapTexturePositions[i].Draw(ref spriteBatch, MapTextures);
                         }
                     }
                 }
@@ -331,18 +331,18 @@ namespace SQ
                 for (int i = 0; i < MapTexturePositions.Length; i++)
                 {
                     if (MapTexturePositions[i] != null && i >= 0)
-                        MapTexturePositions[i].Draw(spriteBatch, MapTextures);
+                        MapTexturePositions[i].Draw(ref spriteBatch, MapTextures);
                 }
             }
         }
 
-        public void DrawBeforePlayer(int playerPos, SpriteBatch spriteBatch)
+        public void DrawBeforePlayer(int playerPos, ref SpriteBatch spriteBatch)
         {
             if (MapDataNumber == 1) {
                 for (int i = 0; i <= playerPos - 2; i++)
                 {
                     if (MapTexturePositions[i] != null)
-                        MapTexturePositions[i].Draw(spriteBatch, MapTextures);
+                        MapTexturePositions[i].Draw(ref spriteBatch, MapTextures);
                 }
             }
             else if (MapDataNumber == 4)
@@ -350,7 +350,7 @@ namespace SQ
                 for (int i = 0; i < MapTexturePositions.Length; i++)
                 {
                     if (MapTexturePositions[i] != null && i >= 0)
-                        MapTexturePositions[i].Draw(spriteBatch,MapTextures );
+                        MapTexturePositions[i].Draw(ref spriteBatch,MapTextures );
                 }
             }
         }

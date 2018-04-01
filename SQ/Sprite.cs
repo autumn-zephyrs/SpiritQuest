@@ -24,9 +24,9 @@ namespace SQ
             #endregion
 
             #region BaseFunctions
-            public virtual void Draw(SpriteBatch spriteBatch) { }
-            public virtual void Update(GameTime gameTime) { }
-            public virtual void Animation(GameTime gameTime) { }
+            public virtual void Draw(ref SpriteBatch spriteBatch) { }
+            public virtual void Update(ref GameTime gameTime) { }
+            public virtual void Animation(ref GameTime gameTime) { }
             #endregion
         }
         public class BasicSprite : Sprite
@@ -47,9 +47,9 @@ namespace SQ
             #endregion
 
             #region BaseFunctions
-            public override void Animation(GameTime gameTime)
+            public override void Animation(ref GameTime gameTime)
             {
-                base.Animation(gameTime);
+                base.Animation(ref gameTime);
                 ElapsedTime += gameTime.ElapsedGameTime.TotalMilliseconds;
 
                 if (ElapsedTime >= TimeBetweenFrames)
@@ -79,15 +79,15 @@ namespace SQ
 
             }
 
-            public override void Update(GameTime gameTime)
+            public override void Update(ref GameTime gameTime)
             {
-                base.Update(gameTime);
-                Animation(gameTime);
+                base.Update(ref gameTime);
+                Animation(ref gameTime);
             }
 
-            public override void Draw(SpriteBatch spriteBatch)
+            public override void Draw(ref SpriteBatch spriteBatch)
             {
-                base.Draw(spriteBatch);
+                base.Draw(ref spriteBatch);
                 spriteBatch.Draw(SpriteTexture, SpritePOS, SourceRectangle, Color.White);
             }
             #endregion

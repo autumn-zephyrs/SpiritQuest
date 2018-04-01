@@ -63,7 +63,7 @@ namespace SQ
         {
             this.Content = new ContentManager(content.ServiceProvider, "Content");
             ScreenChange = new GameScreenTransition(content.Load<Texture2D>("FadeImage"), content);
-            CurrentGameScreen.LoadContent(content);
+            CurrentGameScreen.LoadContent(ref content);
     
 
         }
@@ -77,14 +77,14 @@ namespace SQ
 
         public void Update(GameTime gameTime, Camera cam)
         {
-            CurrentGameScreen.Update(gameTime, cam);
+            CurrentGameScreen.Update(ref gameTime, ref cam);
             ScreenChange.Update(gameTime, cam);
 
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            CurrentGameScreen.Draw(spriteBatch);
+            CurrentGameScreen.Draw(ref spriteBatch);
             if (ScreenChange.IsScreenChanging == true)
             {
                 ScreenChange.Draw(spriteBatch);

@@ -62,7 +62,7 @@ namespace SQ
         {
             if (active == true)
             {
-                UiItem.Draw(spriteBatch);
+                UiItem.Draw(ref spriteBatch);
             }
         }
 

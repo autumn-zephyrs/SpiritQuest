@@ -16,7 +16,7 @@ namespace SQ
         #endregion
 
         #region BasicFunctions
-        public virtual void LoadContent(ContentManager content)
+        public virtual void LoadContent(ref ContentManager content)
         {
             Content = new ContentManager(ScreenManager.Instance().Content.ServiceProvider, "Content");
         }
@@ -26,12 +26,12 @@ namespace SQ
 
         }
 
-        public virtual void Update(GameTime gameTime, Camera cam)
+        public virtual void Update(ref GameTime gameTime, ref Camera cam)
         {
 
         }
 
-        public virtual void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(ref SpriteBatch spriteBatch)
         {
 
         }

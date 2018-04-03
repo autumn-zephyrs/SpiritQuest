@@ -4,14 +4,14 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/FadeImage.png</File>
-    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/font.spritefont</File>
-    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/menu.png</File>
-    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Layer1.png</File>
-    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Items.png</File>
-    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/BaseLayer.png</File>
-    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Collisions.png</File>
-    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Layer2.png</File>
-    <File>C:/Users/bingo/OneDrive/Documents/GitHub/SpiritQuest/SQ/Content/Character.png</File>
+    <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/FadeImage.png</File>
+    <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/font.spritefont</File>
+    <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/menu.png</File>
+    <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/Layer1.png</File>
+    <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/Items.png</File>
+    <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/BaseLayer.png</File>
+    <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/Collisions.png</File>
+    <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/Layer2.png</File>
+    <File>C:/Users/tasty_000/Documents/GitHub/SpiritQuest/SpiritQuest/SQ/Content/Character.png</File>
   </SourceFiles>
 </SourceFileCollection>

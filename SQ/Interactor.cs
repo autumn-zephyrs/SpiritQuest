@@ -41,7 +41,7 @@ namespace SQ
                 if (presentItem == true)
                 {
                     spriteBatch.DrawString(ItemFont, tag, textPos, Color.White);
-                    //if (WithinReach == true)
+                    if (WithinReach == true)
                     {
                         spriteBatch.DrawString(ItemFont, type, textPos2, Color.White);
                     }
@@ -62,7 +62,7 @@ namespace SQ
             posX = (int)cam.Position.X + newState.Position.X;
             posY = (int)cam.Position.Y + newState.Position.Y;
             Rectangle MousePos = new Rectangle(posX,posY, 1, 1);
-            //Rectangle PlayerReach = new Rectangle((PlayerPos.X), (PlayerPos.Y), 96, 96);
+            Rectangle PlayerReach = new Rectangle((PlayerPos.X) - 32, (PlayerPos.Y), 96, 96);
 
             textPos = new Vector2(posX + textBufferX, posY - textBufferY);
             textPos2 = new Vector2(posX + textBufferX, posY - textBufferY - textBufferX);

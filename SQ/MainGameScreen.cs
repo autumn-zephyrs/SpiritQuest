@@ -17,9 +17,12 @@ namespace SQ
         MapGeneration map;
         Player player;
         Interactor interactor;
-
+        InventoryManager inventoryManger;
+        KeyboardState PKS;
         public override void LoadContent(ref ContentManager content)
         {
+            inventoryManger = new InventoryManager();
+            PKS = Keyboard.GetState();
             menu = new MenuManager();
             menu.LoadContent(content);
             map = new MapGeneration();
@@ -28,14 +31,15 @@ namespace SQ
             player.setProperGridPosition(map.NumberOfFloorObjects);
             interactor = new Interactor();
             interactor.LoadContent(ref content);
+            inventoryManger.LoadContent(ref content, ref player);
         }
       
         public override void Update(ref GameTime gameTime, ref Camera cam)
         {
 
-            if (menu.isMenuOpen == false)
-            {
 
+
+      
                 if (player.getMovingBool() == false)
                 {
                     
@@ -44,14 +48,15 @@ namespace SQ
                     player.setMovementBools(map.CanPlayerMoveToTileUpOrDown(gridPosition - map.NumberOfFloorObjects), map.CanPlayerMoveRightTile(gridPosition - 1, player.PositionOnGrid), map.CanPlayerMoveLeftTile(gridPosition + 1, player.PositionOnGrid), map.CanPlayerMoveToTileUpOrDown(gridPosition + map.NumberOfFloorObjects));
                 }
                 player.Update(ref gameTime);
-            }
+          
            
             cam.Position = new Vector2(player.SpritePOS.X - (ScreenManager.Instance().ScreenDimensions.X / 2), player.SpritePOS.Y - (ScreenManager.Instance().ScreenDimensions.Y / 2));
 
-            menu.Update(gameTime, cam);
+       
+            inventoryManger.Update(ref gameTime, ref cam, ref PKS);
             base.Update(ref gameTime, ref cam);
             interactor.Update(ref gameTime, ref cam, map.getItemTextures(), map.getItemValues(), ref player.SpritePOS);
-            
+            PKS = Keyboard.GetState();
         }
 
         public override void Draw(ref SpriteBatch spriteBatch)
@@ -62,6 +67,7 @@ namespace SQ
             player.Draw(ref spriteBatch);
             map.DrawAfterPlayer(player.getProperGridPosition(),ref spriteBatch);
             menu.Draw(spriteBatch);
+            inventoryManger.Draw(ref spriteBatch);
             base.Draw(ref spriteBatch);
             interactor.Draw(ref spriteBatch);
         }

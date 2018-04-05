@@ -16,13 +16,13 @@ namespace SQ
         #region playerStats
         // main stats
         // strength, dexterity, willpower, intelligence, charisma and vitality.
-        int STR;
-        int DEX;
-        int WIL;
-        int INT;
-        int CHA;
-        int VIT;
-        int LCK;
+        public int STR;
+        public int DEX;
+        public int WIL;
+        public int INT;
+        public int CHA;
+        public int VIT;
+        public int LCK;
 
         // behind the scenes stuff
         int currentExperience;

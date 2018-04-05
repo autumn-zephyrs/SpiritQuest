@@ -212,26 +212,26 @@ namespace SQ
                 {
                     if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
                     {
-                        if (SpritePOS.X - 8 < PositionOnGrid.X * 32 - GridPositionOffset.X)
+                        if (SpritePOS.X - (MovementSpeed * 2) < PositionOnGrid.X * 32 - GridPositionOffset.X)
                         {
                             SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
                         }
                         else
                         {
 
-                            SpritePOS.X -= 8;
+                            SpritePOS.X -= (MovementSpeed * 2);
                         }
                     }
                     else
                     {
-                        if (SpritePOS.X - 4 < PositionOnGrid.X * 32 - GridPositionOffset.X)
+                        if (SpritePOS.X - MovementSpeed < PositionOnGrid.X * 32 - GridPositionOffset.X)
                         {
                             SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
                         }
                         else
                         {
 
-                            SpritePOS.X -= 4;
+                            SpritePOS.X -= MovementSpeed;
                         }
                     }
                 }
@@ -239,26 +239,26 @@ namespace SQ
                 {
                     if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
                     {
-                        if (SpritePOS.X + 8 > PositionOnGrid.X * 32 - GridPositionOffset.X)
+                        if (SpritePOS.X + (MovementSpeed * 2) > PositionOnGrid.X * 32 - GridPositionOffset.X)
                         {
                             SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
                         }
                         else
                         {
 
-                            SpritePOS.X += 8;
+                            SpritePOS.X += (MovementSpeed * 2);
                         }
                     }
                     else
                     {
-                        if (SpritePOS.X + 4 > PositionOnGrid.X * 32 - GridPositionOffset.X)
+                        if (SpritePOS.X + MovementSpeed > PositionOnGrid.X * 32 - GridPositionOffset.X)
                         {
                             SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
                         }
                         else
                         {
 
-                            SpritePOS.X += 4;
+                            SpritePOS.X += MovementSpeed;
                         }
                     }
                 }
@@ -266,26 +266,26 @@ namespace SQ
                 {
                     if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
                     {
-                        if (SpritePOS.Y + 8 > PositionOnGrid.Y * 32 - GridPositionOffset.Y)
+                        if (SpritePOS.Y + (MovementSpeed * 2) > PositionOnGrid.Y * 32 - GridPositionOffset.Y)
                         {
                             SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
                         }
                         else
                         {
 
-                            SpritePOS.Y += 8;
+                            SpritePOS.Y += (MovementSpeed * 2);
                         }
                     }
                     else
                     {
-                        if (SpritePOS.Y + 4 > PositionOnGrid.Y * 32 - GridPositionOffset.Y)
+                        if (SpritePOS.Y + MovementSpeed > PositionOnGrid.Y * 32 - GridPositionOffset.Y)
                         {
                             SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
                         }
                         else
                         {
 
-                            SpritePOS.Y += 4;
+                            SpritePOS.Y += MovementSpeed;
                         }
                     }
                 }
@@ -293,33 +293,31 @@ namespace SQ
                 {
                     if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
                     {
-                        if (SpritePOS.Y - 8 < PositionOnGrid.Y * 32 - GridPositionOffset.Y)
+                        if (SpritePOS.Y - (MovementSpeed * 2) < PositionOnGrid.Y * 32 - GridPositionOffset.Y)
                         {
                             SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
                         }
                         else
                         {
 
-                            SpritePOS.Y -= 8;
+                            SpritePOS.Y -= (MovementSpeed * 2);
                         }
                     }
                     else
                     {
-                        if (SpritePOS.Y - 4 < PositionOnGrid.Y * 32 - GridPositionOffset.Y)
+                        if (SpritePOS.Y - MovementSpeed < PositionOnGrid.Y * 32 - GridPositionOffset.Y)
                         {
                             SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
                         }
                         else
                         {
 
-                            SpritePOS.Y -= 4;
+                            SpritePOS.Y -= MovementSpeed;
                         }
                     }
                 }
                 else
                 {
-                    SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
-                    SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
                     Moving = false;
                 }
                 

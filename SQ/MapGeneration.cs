@@ -16,6 +16,9 @@ namespace SQ
 {
     class MapGeneration
     {
+        //order from starting from 0 this is the order and names rn
+        // capitals dont matter
+        ///enum Layers {Base, Object, Higher, Collision, item };
 
         List<MapLayer> MapLayers;
         JsonData jsonData;

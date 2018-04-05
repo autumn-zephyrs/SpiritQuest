@@ -178,6 +178,7 @@ namespace SQ
                 SourceRectangle.Y = 0;
                 if (Down == true)
                 {
+                    
                     PositionOnGrid.Y += 1;
                     Moving = true;
                 }
@@ -209,22 +210,116 @@ namespace SQ
                 
                 if (SpritePOS.X > PositionOnGrid.X * 32 - GridPositionOffset.X )
                 {
-                    SpritePOS.X -= 4;
+                    if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
+                    {
+                        if (SpritePOS.X - 8 < PositionOnGrid.X * 32 - GridPositionOffset.X)
+                        {
+                            SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
+                        }
+                        else
+                        {
+
+                            SpritePOS.X -= 8;
+                        }
+                    }
+                    else
+                    {
+                        if (SpritePOS.X - 4 < PositionOnGrid.X * 32 - GridPositionOffset.X)
+                        {
+                            SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
+                        }
+                        else
+                        {
+
+                            SpritePOS.X -= 4;
+                        }
+                    }
                 }
                 else if (SpritePOS.X < PositionOnGrid.X * 32 - GridPositionOffset.X)
                 {
-                    SpritePOS.X += 4;
+                    if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
+                    {
+                        if (SpritePOS.X + 8 > PositionOnGrid.X * 32 - GridPositionOffset.X)
+                        {
+                            SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
+                        }
+                        else
+                        {
+
+                            SpritePOS.X += 8;
+                        }
+                    }
+                    else
+                    {
+                        if (SpritePOS.X + 4 > PositionOnGrid.X * 32 - GridPositionOffset.X)
+                        {
+                            SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
+                        }
+                        else
+                        {
+
+                            SpritePOS.X += 4;
+                        }
+                    }
                 }
                 else if (SpritePOS.Y < PositionOnGrid.Y * 32 - GridPositionOffset.Y)
                 {
-                    SpritePOS.Y += 4;
+                    if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
+                    {
+                        if (SpritePOS.Y + 8 > PositionOnGrid.Y * 32 - GridPositionOffset.Y)
+                        {
+                            SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
+                        }
+                        else
+                        {
+
+                            SpritePOS.Y += 8;
+                        }
+                    }
+                    else
+                    {
+                        if (SpritePOS.Y + 4 > PositionOnGrid.Y * 32 - GridPositionOffset.Y)
+                        {
+                            SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
+                        }
+                        else
+                        {
+
+                            SpritePOS.Y += 4;
+                        }
+                    }
                 }
                 else if(SpritePOS.Y > PositionOnGrid.Y * 32 - GridPositionOffset.Y)
                 {
-                    SpritePOS.Y -= 4;
+                    if (Keyboard.GetState().IsKeyDown(Keys.LeftShift))
+                    {
+                        if (SpritePOS.Y - 8 < PositionOnGrid.Y * 32 - GridPositionOffset.Y)
+                        {
+                            SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
+                        }
+                        else
+                        {
+
+                            SpritePOS.Y -= 8;
+                        }
+                    }
+                    else
+                    {
+                        if (SpritePOS.Y - 4 < PositionOnGrid.Y * 32 - GridPositionOffset.Y)
+                        {
+                            SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
+                        }
+                        else
+                        {
+
+                            SpritePOS.Y -= 4;
+                        }
+                    }
                 }
                 else
                 {
+                    SpritePOS.Y = (int)(PositionOnGrid.Y * 32 - GridPositionOffset.Y);
+                    SpritePOS.X = (int)(PositionOnGrid.X * 32 - GridPositionOffset.X);
                     Moving = false;
                 }
                 
